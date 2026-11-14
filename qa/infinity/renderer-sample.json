@@ -1,0 +1,15 @@
+{
+  "emittedParticles": "45940",
+  "gpuDrawCalls": "116",
+  "gpuParticleCapacity": "155072",
+  "measuredFps": "120",
+  "quality": "native-resolution",
+  "renderResolution": "1440x900",
+  "renderTriangles": "103337",
+  "renderer": "webgl2-hdr",
+  "scene": "4",
+  "viewport": [
+    1440,
+    900
+  ]
+}

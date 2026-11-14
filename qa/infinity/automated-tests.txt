@@ -1,0 +1,23 @@
+✔ one fullscreen journey, all assets local and identities preserved (1180.793ms)
+✔ gesture entry, forward/back navigation, hidden-scene inertness and replay (55.744ms)
+✔ blocked audio never blocks entry, and the next gesture retries it (24.6418ms)
+✔ all eight original photos are explorable without a separate mode (34.7016ms)
+✔ real scratch geometry, accessible reveal, and retained coverage on resize (41.634ms)
+✔ three distinct worlds disclose their correct event details (34.5578ms)
+✔ piano has thirteen notes, volume changes its audio gain, and playback is bounded (34.7586ms)
+✔ blessings are safely rendered, locally bounded, and handle malformed storage (41.8433ms)
+✔ sound levels stay synchronised and piano ducking respects the score level (34.3784ms)
+✔ promise, finale and replay reset correctly, and particles have a hard cap (28.1677ms)
+✔ form submission plants a wish and rapid navigation keeps the latest destination (26.1454ms)
+✔ sculpted petals have finite normals, valid topology and useful bounds (3.3224ms)
+✔ palace cloth and assembled fragments have valid geometry and transforms (35.8539ms)
+✔ extruded piano and physical celebration objects have valid surfaces (69.2571ms)
+✔ living garden batches preserve source transforms when petals open (79.0244ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1638.9992

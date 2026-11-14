@@ -1,0 +1,380 @@
+[
+  {
+    "document": [
+      320,
+      568
+    ],
+    "outside": [],
+    "scene": "scene-piano",
+    "viewport": [
+      320,
+      568
+    ],
+    "composition": {
+      "gap": 4,
+      "overflow": false,
+      "scene": "scene-piano",
+      "viewport": [
+        320,
+        568
+      ]
+    }
+  },
+  {
+    "document": [
+      320,
+      568
+    ],
+    "outside": [],
+    "scene": "scene-garden",
+    "viewport": [
+      320,
+      568
+    ],
+    "composition": {
+      "gap": 6,
+      "overflow": false,
+      "scene": "scene-garden",
+      "viewport": [
+        320,
+        568
+      ]
+    }
+  },
+  {
+    "document": [
+      320,
+      568
+    ],
+    "outside": [],
+    "scene": "scene-finale",
+    "viewport": [
+      320,
+      568
+    ],
+    "composition": {
+      "gap": 7,
+      "overflow": false,
+      "scene": "scene-finale",
+      "viewport": [
+        320,
+        568
+      ]
+    }
+  },
+  {
+    "document": [
+      390,
+      760
+    ],
+    "outside": [],
+    "scene": "scene-piano",
+    "viewport": [
+      390,
+      760
+    ],
+    "composition": {
+      "gap": 7,
+      "overflow": false,
+      "scene": "scene-piano",
+      "viewport": [
+        390,
+        760
+      ]
+    }
+  },
+  {
+    "document": [
+      390,
+      760
+    ],
+    "outside": [],
+    "scene": "scene-garden",
+    "viewport": [
+      390,
+      760
+    ],
+    "composition": {
+      "gap": 16,
+      "overflow": false,
+      "scene": "scene-garden",
+      "viewport": [
+        390,
+        760
+      ]
+    }
+  },
+  {
+    "document": [
+      390,
+      760
+    ],
+    "outside": [],
+    "scene": "scene-finale",
+    "viewport": [
+      390,
+      760
+    ],
+    "composition": {
+      "gap": 19,
+      "overflow": false,
+      "scene": "scene-finale",
+      "viewport": [
+        390,
+        760
+      ]
+    }
+  },
+  {
+    "document": [
+      390,
+      844
+    ],
+    "outside": [],
+    "scene": "scene-piano",
+    "viewport": [
+      390,
+      844
+    ],
+    "composition": {
+      "gap": 15,
+      "overflow": false,
+      "scene": "scene-piano",
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  },
+  {
+    "document": [
+      390,
+      844
+    ],
+    "outside": [],
+    "scene": "scene-garden",
+    "viewport": [
+      390,
+      844
+    ],
+    "composition": {
+      "gap": 12,
+      "overflow": false,
+      "scene": "scene-garden",
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  },
+  {
+    "document": [
+      390,
+      844
+    ],
+    "outside": [],
+    "scene": "scene-finale",
+    "viewport": [
+      390,
+      844
+    ],
+    "composition": {
+      "gap": 15,
+      "overflow": false,
+      "scene": "scene-finale",
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  },
+  {
+    "document": [
+      430,
+      932
+    ],
+    "outside": [],
+    "scene": "scene-piano",
+    "viewport": [
+      430,
+      932
+    ],
+    "composition": {
+      "gap": 24,
+      "overflow": false,
+      "scene": "scene-piano",
+      "viewport": [
+        430,
+        932
+      ]
+    }
+  },
+  {
+    "document": [
+      430,
+      932
+    ],
+    "outside": [],
+    "scene": "scene-garden",
+    "viewport": [
+      430,
+      932
+    ],
+    "composition": {
+      "gap": 32,
+      "overflow": false,
+      "scene": "scene-garden",
+      "viewport": [
+        430,
+        932
+      ]
+    }
+  },
+  {
+    "document": [
+      430,
+      932
+    ],
+    "outside": [],
+    "scene": "scene-finale",
+    "viewport": [
+      430,
+      932
+    ],
+    "composition": {
+      "gap": 58,
+      "overflow": false,
+      "scene": "scene-finale",
+      "viewport": [
+        430,
+        932
+      ]
+    }
+  },
+  {
+    "document": [
+      844,
+      390
+    ],
+    "outside": [],
+    "scene": "scene-piano",
+    "viewport": [
+      844,
+      390
+    ],
+    "composition": {
+      "gap": 2,
+      "overflow": false,
+      "scene": "scene-piano",
+      "viewport": [
+        844,
+        390
+      ]
+    }
+  },
+  {
+    "document": [
+      844,
+      390
+    ],
+    "outside": [],
+    "scene": "scene-garden",
+    "viewport": [
+      844,
+      390
+    ],
+    "composition": {
+      "gap": -33,
+      "overflow": false,
+      "scene": "scene-garden",
+      "viewport": [
+        844,
+        390
+      ]
+    }
+  },
+  {
+    "document": [
+      844,
+      390
+    ],
+    "outside": [],
+    "scene": "scene-finale",
+    "viewport": [
+      844,
+      390
+    ],
+    "composition": {
+      "gap": 10,
+      "overflow": false,
+      "scene": "scene-finale",
+      "viewport": [
+        844,
+        390
+      ]
+    }
+  },
+  {
+    "document": [
+      1440,
+      900
+    ],
+    "outside": [],
+    "scene": "scene-piano",
+    "viewport": [
+      1440,
+      900
+    ],
+    "composition": {
+      "gap": 21,
+      "overflow": false,
+      "scene": "scene-piano",
+      "viewport": [
+        1440,
+        900
+      ]
+    }
+  },
+  {
+    "document": [
+      1440,
+      900
+    ],
+    "outside": [],
+    "scene": "scene-garden",
+    "viewport": [
+      1440,
+      900
+    ],
+    "composition": {
+      "gap": 47,
+      "overflow": false,
+      "scene": "scene-garden",
+      "viewport": [
+        1440,
+        900
+      ]
+    }
+  },
+  {
+    "document": [
+      1440,
+      900
+    ],
+    "outside": [],
+    "scene": "scene-finale",
+    "viewport": [
+      1440,
+      900
+    ],
+    "composition": {
+      "gap": 94,
+      "overflow": false,
+      "scene": "scene-finale",
+      "viewport": [
+        1440,
+        900
+      ]
+    }
+  }
+]

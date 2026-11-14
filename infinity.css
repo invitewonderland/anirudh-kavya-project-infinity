@@ -1,0 +1,51 @@
+/* Project Infinity: a native-resolution 3D theatre beneath the accessible touch stage. */
+#infinityCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity .8s ease}
+.world.infinity-ready #infinityCanvas{opacity:1}
+.world.infinity-ready #stage{z-index:2}
+.world.infinity-ready .scene{background:transparent!important}
+.world.infinity-ready .environment,.world.infinity-ready .memory-haze,.world.infinity-ready .memory-picture,.world.infinity-ready .portrait-shade,.world.infinity-ready .portal-night,.world.infinity-ready .palace-door,.world.infinity-ready .door-light,.world.infinity-ready .nebula,.world.infinity-ready .garden-mist,.world.infinity-ready .celebration-shade,.world.infinity-ready .piano-shade,.world.infinity-ready .promise-shade,.world.infinity-ready .finale-shade,.world.infinity-ready .date-astrolabe{opacity:0!important;pointer-events:none}
+.world.infinity-ready #magicCanvas{display:none}
+.world.infinity-ready .portal-seal{background:none;border:0;box-shadow:none}
+.world.infinity-ready .portal-seal .seal-diamond,.world.infinity-ready .seal-orbit,.world.infinity-ready .portal-seal:after{opacity:0}
+.world.infinity-ready .portal-seal>span:last-child{transform:translateY(40px);text-shadow:0 2px 15px #000}
+.world.infinity-ready .portal-copy h1{text-shadow:0 2px 30px #04131bc9,0 0 60px #06171ca0}
+.world.infinity-ready .portal-copy .script-line{text-shadow:0 2px 25px #05141b}
+.world.infinity-ready .object-art{opacity:0!important;pointer-events:none}
+.world.infinity-ready .object-halo{opacity:0}
+.world.infinity-ready .piano-lid{opacity:0;pointer-events:none}
+.world.infinity-ready .wish-tree>svg,.world.infinity-ready .wish-tree:before,.world.infinity-ready .seed-light>span{opacity:0}
+.world.infinity-ready .wish-flower{color:transparent;background:none;text-shadow:none;box-shadow:none}
+.world.infinity-ready .wish-flower:focus-visible{outline:1px solid #fff1c5;background:#e7bd6630}
+.world.infinity-ready .seed-light{background:none;text-shadow:none;animation:none}
+.world.infinity-ready .date-relic{background:radial-gradient(circle,#12363a38,#08252b50);box-shadow:0 0 30px #e1ba5f17;border-color:#e7c98c60}
+.world.infinity-ready .date-relic:before{opacity:0}
+.world.infinity-ready .date-inscription{border-color:#e7c98c20}
+.world.infinity-ready .date-inscription>strong{text-shadow:0 0 45px #f5d89c80}
+.world.infinity-ready .date-inscription>p{text-shadow:0 0 24px #f5d89c50}
+.world.infinity-ready #goldCanvas{filter:contrast(1.06) saturate(.9);box-shadow:inset 0 0 35px #f4dd9340}
+.world.infinity-ready .date-relic.revealed #goldCanvas{filter:brightness(2);opacity:0}
+.world.infinity-ready .event-revelation{text-shadow:0 2px 16px #03121c,0 0 35px #04161c}
+.world.infinity-ready .memory-caption,.world.infinity-ready .promise-copy,.world.infinity-ready .finale-copy{text-shadow:0 3px 25px #071820b3}
+.world.infinity-ready .promise-copy,.world.infinity-ready .finale-copy,.world.infinity-ready .finale-brand{text-shadow:0 2px 5px #031520,0 3px 22px #031520,0 0 38px #031520}
+.world.infinity-ready .promise-copy em,.world.infinity-ready .finale-copy em{color:#f8dfaa}
+.world.infinity-ready .promise-heart,.world.infinity-ready .sky-constellation{opacity:0!important}
+.world.infinity-ready .nav-next>b{border-radius:30% 2% 30% 2%;background:linear-gradient(135deg,#d4b27121,#071d2e85);box-shadow:inset 0 1px 0 #f6d89b3b,0 0 25px #d4b27112;border-color:#d9b87a7a}
+.world.infinity-ready .nav-next:hover>b{transform:translateY(-2px);box-shadow:0 0 30px #edc57c33}
+.world.infinity-ready .scene-dots button[aria-current]:after{box-shadow:0 0 14px 3px #fce2a088}
+.world.infinity-ready .journey-progress>span{color:#e5c891;text-shadow:0 1px 8px #020b14}
+.world.infinity-ready .piano-fallboard{background:linear-gradient(120deg,#0c3539,#214a42 35%,#09252d 70%);box-shadow:inset 0 1px #ffe1a38f,0 0 28px #d1af5e24}
+.world.infinity-ready .piano-keys{border-color:#b59351;box-shadow:0 15px 45px #0008,inset 0 0 12px #e1be6a44}
+.world.infinity-ready .piano-key.white.pressed{background:linear-gradient(#fff6c7,#f0cc76);box-shadow:0 0 40px #f0cd7390,inset 0 0 18px #ffedbb}
+.world.infinity-ready .piano-key.black.pressed{background:linear-gradient(#f3d59e,#a77b3c);box-shadow:0 0 28px #f4d9a16b}
+.world.infinity-ready .piano-hint{color:#d1deca;text-shadow:0 2px 14px #031b29}
+.sound-controls{display:flex;align-items:center}.sound-controls button{font:24px var(--serif);color:#e6ca8e}
+.sound-controls button[aria-expanded=true]{color:#fff0b8;filter:drop-shadow(0 0 8px #f4d49a)}
+.sound-panel{position:absolute;right:25px;top:calc(var(--safe-top) + 77px);z-index:50;padding:22px 24px 20px;width:min(290px,calc(100vw - 40px));background:linear-gradient(140deg,#173a3feb,#061e2aef);border:1px solid #c9a76980;box-shadow:0 20px 80px #020a13aa,0 0 0 5px #d8b66e0a;backdrop-filter:blur(24px);display:grid;gap:12px 10px}
+.sound-panel>span{font:italic 23px var(--serif);color:#eed3a1;margin-bottom:8px}
+.sound-panel label{font:7px var(--sans);letter-spacing:.18em;color:#d0b989;display:flex;justify-content:space-between;gap:15px}
+.sound-panel output{font-variant-numeric:tabular-nums;color:#fff0ca}
+.sound-panel input{accent-color:#d9b679;width:100%;min-height:26px;margin:0}
+.world.infinity-ready .world-header{background:linear-gradient(#04161b8c,transparent)}
+@media(max-width:370px){.wordmark small{display:none}.header-tools{gap:4px}.header-tools>span{font-size:7px}.sound-controls button{width:36px;padding:6px}.world-header{padding-left:20px;padding-right:17px}}
+@media(min-width:800px) and (min-aspect-ratio:1/1){.sound-panel{right:44px;top:calc(var(--safe-top) + 82px);width:300px}.world.infinity-ready .portal-seal>span:last-child{transform:translateY(36px)}}
+@media(prefers-reduced-motion:reduce){#infinityCanvas{transition:none}.world.infinity-ready .nav-next:hover>b{transform:none}}
