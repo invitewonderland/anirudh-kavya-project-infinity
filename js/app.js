@@ -45,8 +45,9 @@
     if(motion.matches)finishTransition(epoch);
     else{
       // The environment carries the cinematic transformation; the touch stage stays geometrically stable.
-      animate(to,[{opacity:0},{opacity:1}],{duration:550});
-      transitionTimer=setTimeout(()=>finishTransition(epoch),560);
+      const entrance=previous===0&&target===1,duration=entrance?1500:550;
+      animate(to,entrance?[{opacity:0,offset:0},{opacity:0,offset:.16},{opacity:1,offset:1}]:[{opacity:0},{opacity:1}],{duration,easing:entrance?'cubic-bezier(.4,0,.2,1)':'cubic-bezier(.16,1,.3,1)'});
+      transitionTimer=setTimeout(()=>finishTransition(epoch),duration+10);
     }
     if(target===2)scratch.draw();if(target===5)renderWishes();if(target===7)fx.burst(innerWidth*.5,(window.visualViewport?.height||innerHeight)*.4,compact?32:55,'gold');
     const preload=scenes[target+1]?.querySelector('img');if(preload)preload.loading='eager';return true;

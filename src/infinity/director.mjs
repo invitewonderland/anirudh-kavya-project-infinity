@@ -6,6 +6,7 @@ import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import * as S from './shaders.mjs';
+import {portraitOpacity} from './portrait.mjs';
 import {materials,palace,astrolabe,lantern,rose,compass,grandPiano,garden,volumeMaterial,mesh,torus} from './objects.mjs';
 
 const TAU=Math.PI*2,clamp=T.MathUtils.clamp;
@@ -16,7 +17,7 @@ const PHOTOS=['02-royal-romance','01-grand-arrival','03-love-beyond-words','04-a
 export class InfinityDirector {
   constructor(host){
     this.host=host;this.motion=matchMedia('(prefers-reduced-motion: reduce)');this.sceneIndex=0;this.act=0;this.time=0;this.transitionStarted=0;this.last=performance.now();this.born=this.last;this.ready=false;this.suspended=document.hidden;
-    this.pointer=new T.Vector2();this.pointerTarget=new T.Vector2();this.open=0;this.openTarget=0;this.openVelocity=0;this.kick=0;this.energy=0;this.reveal=0;this.revealTarget=0;this.lit=0;this.litTarget=0;this.promise=0;this.sky=0;this.noteEnergy=new Float32Array(12);this.writeIndex=0;this.spawned=0;this.capacity=131072;this.atmosphereCount=24000;this.frames=0;this.frameTimes=[];this.layoutDirty=true;this.bloomTime=-100;this.selectedWish=0;
+    this.pointer=new T.Vector2();this.pointerTarget=new T.Vector2();this.open=0;this.openTarget=0;this.openVelocity=0;this.kick=0;this.energy=0;this.reveal=0;this.revealTarget=0;this.lit=0;this.litTarget=0;this.promise=0;this.sky=0;this.noteEnergy=new Float32Array(12);this.writeIndex=0;this.spawned=0;this.capacity=131072;this.atmosphereCount=24000;this.frames=0;this.frameTimes=[];this.portraitStarted=0;this.portraitDuration=1.45;this.layoutDirty=true;this.bloomTime=-100;this.selectedWish=0;
     this.renderer=new T.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance',stencil:false});this.renderer.setClearColor(0x061b25);this.renderer.toneMapping=T.ACESFilmicToneMapping;this.renderer.toneMappingExposure=.93;this.renderer.outputColorSpace=T.SRGBColorSpace;this.renderer.shadowMap.enabled=true;this.renderer.shadowMap.type=T.PCFShadowMap;this.renderer.info.autoReset=false;
     this.renderer.domElement.id='infinityCanvas';this.renderer.domElement.setAttribute('aria-hidden','true');host.prepend(this.renderer.domElement);
     this.scene=new T.Scene();this.camera=new T.PerspectiveCamera(40,1,.1,150);this.camera.position.z=18;
@@ -55,7 +56,7 @@ export class InfinityDirector {
   async loadAssets(){
     try{
       await Promise.all([...new Set([...BG,...PHOTOS,'assets/scenes/ceremony.webp','assets/scenes/moonlight.webp'])].map(url=>this.loadTexture(url)));
-      this.setBackground(this.sceneIndex===3?`assets/scenes/${['welcome','ceremony','moonlight'][this.act]}.webp`:BG[this.sceneIndex],true);this.updatePhoto(this.pendingPhoto||document.querySelector('#memoryImage')?.getAttribute('src')||PHOTOS[0],false);await this.renderer.compileAsync(this.scene,this.camera);this.born=performance.now();this.ready=true;this.host.classList.add('infinity-ready');this.host.dataset.renderer='webgl2-hdr';this.host.dataset.quality='native-resolution';this.layoutDirty=true;this.wake();
+      this.setBackground(this.sceneIndex===3?`assets/scenes/${['welcome','ceremony','moonlight'][this.act]}.webp`:BG[this.sceneIndex],true);this.updatePhoto(this.pendingPhoto||document.querySelector('#memoryImage')?.getAttribute('src')||PHOTOS[0],false);await this.renderer.compileAsync(this.scene,this.camera);this.born=performance.now();this.ready=true;this.host.classList.add('infinity-ready');this.host.dataset.renderer='webgl2-hdr';this.host.dataset.quality='native-resolution';if(this.sceneIndex===1)this.portraitStarted=this.time;this.layoutDirty=true;this.wake();
     }catch(error){this.fail('The 3D assets could not initialize: '+error.message);}
   }
   captureBackground(){
@@ -81,10 +82,11 @@ export class InfinityDirector {
     this.lantern=lantern(this.m);this.rose=rose(this.m);this.star=compass(this.m);[this.lantern,this.rose,this.star].forEach(o=>this.scene.add(o.group));
     this.piano=grandPiano(this.m);this.scene.add(this.piano.group);this.tree=garden(this.m);this.scene.add(this.tree.group);this.seed=rose(this.m);this.scene.add(this.seed.group);
     this.wishModels=Array.from({length:7},()=>{const flower=rose(this.m,false);this.scene.add(flower.group);return flower;});
-    this.photoGroup=new T.Group();this.photoMat=new T.MeshBasicMaterial({color:0xffffff});this.photoMesh=mesh(new T.PlaneGeometry(1,1,32,32),this.photoMat,this.photoGroup,0,0,.1);this.photoBorders=[];
-    for(let i=0;i<4;i++)this.photoBorders.push(mesh(new T.BoxGeometry(1,1,.025),this.m.gold,this.photoGroup));
+    this.photoGroup=new T.Group();this.portraitReveal={value:0};this.photoMat=new T.MeshBasicMaterial({color:0xffffff,transparent:true,depthWrite:false});this.photoMesh=mesh(new T.PlaneGeometry(1,1,32,32),this.photoMat,this.photoGroup,0,0,.1);this.photoBorders=[];
+    for(let i=0;i<4;i++)this.photoBorders.push(mesh(new T.BoxGeometry(1,1,.025),this.m.gold.clone(),this.photoGroup));
+    this.photoBorders.forEach(border=>{border.material.transparent=true;border.material.depthWrite=false;border.material.opacity=0;});
     this.scene.add(this.photoGroup);
-    this.photoUniform={value:0};this.photoMat.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>','#include <map_fragment>\ndiffuseColor.rgb *= mix(.32,1.,smoothstep(0.,.34,vMapUv.y));');shader.uniforms.uLivingTime=this.photoUniform;shader.vertexShader='uniform float uLivingTime;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\ntransformed.z += sin(position.x*3.+uLivingTime*.2)*.012;');};
+    this.photoUniform={value:0};this.photoMat.onBeforeCompile=shader=>{shader.uniforms.uPortraitReveal=this.portraitReveal;shader.fragmentShader='uniform float uPortraitReveal;\n'+shader.fragmentShader;shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>','diffuseColor.a *= uPortraitReveal;\n#include <opaque_fragment>');shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>','#include <map_fragment>\ndiffuseColor.rgb *= mix(.32,1.,smoothstep(0.,.34,vMapUv.y));');shader.uniforms.uLivingTime=this.photoUniform;shader.vertexShader='uniform float uLivingTime;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\ntransformed.z += sin(position.x*3.+uLivingTime*.2)*.012;');};
   }
   createAtmosphere(){
     const seeds=new Float32Array(this.atmosphereCount*4);for(let i=0;i<seeds.length;i++)seeds[i]=Math.random();const geometry=new T.BufferGeometry();geometry.setAttribute('position',new T.BufferAttribute(new Float32Array(this.atmosphereCount*3),3));geometry.setAttribute('aSeed',new T.BufferAttribute(seeds,4));
@@ -146,7 +148,7 @@ export class InfinityDirector {
   }
   updatePhoto(url,burst=true){this.pendingPhoto=url;const entry=this.textures.get(url);if(!entry?.texture)return;this.photoMat.map=entry.texture;this.photoMat.needsUpdate=true;this.photoAspect=entry.aspect;this.layoutDirty=true;if(this.sceneIndex===1)this.setBackground(url,false);if(burst)this.emit(this.width*.82,this.height*.2,2200,'butterfly');this.wake();}
   connectAudio(audio){this.audio=audio;}
-  setScene(index){this.retireParticles();this.noteEnergy.fill(0);this.kick=0;this.sceneIndex=index;this.openTarget=index===0?0:1;this.setBackground(index===3?`assets/scenes/${['welcome','ceremony','moonlight'][this.act]}.webp`:BG[index]);this.atmosphereUniforms.uScene.value=index;this.ribbons.forEach(r=>r.uniforms.uScene.value=index);this.layoutDirty=true;this.kick=Math.max(this.kick,.4);if(index===0){this.open=0;this.openVelocity=0;this.revealTarget=0;this.litTarget=0;this.sky=0;this.promise=0;this.born=performance.now();}this.wake();}
+  setScene(index){const previous=this.sceneIndex;if(index===1){this.portraitStarted=this.time;this.portraitDuration=previous===0?1.45:.75;this.portraitReveal.value=this.motion.matches?1:0;this.host.dataset.portraitReveal=String(this.portraitReveal.value);}this.retireParticles();this.noteEnergy.fill(0);this.kick=0;this.sceneIndex=index;this.openTarget=index===0?0:1;this.setBackground(index===3?`assets/scenes/${['welcome','ceremony','moonlight'][this.act]}.webp`:BG[index]);this.atmosphereUniforms.uScene.value=index;this.ribbons.forEach(r=>r.uniforms.uScene.value=index);this.layoutDirty=true;this.kick=Math.max(this.kick,.4);if(index===0){this.open=0;this.openVelocity=0;this.revealTarget=0;this.litTarget=0;this.sky=0;this.promise=0;this.born=performance.now();}this.wake();}
   selectAct(index){this.act=index;this.litTarget=0;if(this.sceneIndex===3){this.retireParticles();this.setBackground(`assets/scenes/${['welcome','ceremony','moonlight'][index]}.webp`);}this.layoutDirty=true;this.kick=.7;this.wake();}
   openPortal(){this.openTarget=1;this.emit(this.width*.5,this.height*.62,8200,'gold',{spread:3.5,speed:3.5});this.kick=1;this.wake();}
   revealDate(){this.revealTarget=1;this.kick=1;const r=this.rect('#dateRelic');if(r)this.emit(r.left+r.width/2,r.top+r.height/2,11500,'dust',{speed:3.3,life:3.7});this.wake();}
@@ -184,7 +186,7 @@ export class InfinityDirector {
       this.bg.uniforms.uTime.value=t;this.bg.uniforms.uEnergy.value=this.energy;this.bg.uniforms.uOpen.value=this.open;if(this.bg.uniforms.uProgress.value<1)this.bg.uniforms.uProgress.value=this.motion.matches?1:ease((t-this.transitionStarted)/.9);
       this.palace.group.visible=index===0;this.photoGroup.visible=index===1;this.relic.group.visible=index===2;this.lantern.group.visible=index===3&&this.act===0;this.rose.group.visible=index===3&&this.act===1;this.star.group.visible=index===0||index===3&&this.act===2;this.piano.group.visible=index===4;this.tree.group.visible=index===5&&!typing;this.seed.group.visible=index===5&&!typing;this.wishModels.forEach(o=>{if(index!==5||typing)o.group.visible=false;});
       this.palace.uniforms.uAssemble.value=this.motion.matches?1:ease((now-this.born)/1600);this.palace.uniforms.uOpen.value=this.open;this.palace.uniforms.uTime.value=t;this.palace.curtains.forEach(c=>{c.uniforms.uTime.value=t;c.uniforms.uOpen.value=this.open;});this.palace.seam.scale.x=1+this.open*100;this.palace.seam.material.opacity=1-this.open;
-      this.photoUniform.value=t;this.photoGroup.rotation.y=this.motion.matches?0:Math.sin(t*.12)*.035;
+      this.photoUniform.value=t;if(index===1){const alpha=portraitOpacity(t,this.portraitStarted,this.portraitDuration,this.motion.matches);this.portraitReveal.value=alpha;this.photoBorders.forEach(border=>border.material.opacity=alpha);this.host.dataset.portraitReveal=alpha.toFixed(3);}this.photoGroup.rotation.y=this.motion.matches?0:Math.sin(t*.12)*.035;
       this.relic.rings.forEach((ring,i)=>{ring.rotation.z=(i%2?1:-1)*t*.035*(1+this.reveal);ring.rotation.y=Math.sin(t*.2+i)*(.07+this.reveal*.13);});
       this.lantern.group.rotation.z=Math.sin(t*.8)*.06;this.lantern.flame.scale.y=1.5+Math.sin(t*8.)*.15+this.lit*.7;this.lantern.light.intensity=9+this.lit*14+this.energy*15;
       this.rose.flower.rotation.z=t*.055;this.rose.petals.forEach(({pivot,base,layer})=>pivot.rotation.x=base+this.lit*(.3+layer*.05));this.star.rings.forEach((ring,i)=>{ring.rotation.x=t*(.12+i*.04);ring.rotation.y=t*(.17-i*.02);});this.star.crystal.rotation.y=t*.2;

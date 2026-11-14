@@ -1,0 +1,17 @@
+{
+  "testedViewports": [
+    [
+      1080,
+      1920
+    ],
+    [
+      450,
+      800
+    ]
+  ],
+  "firstObservedOpacity": 0.003,
+  "finalObservedOpacity": 1,
+  "interruptedDestination": 2,
+  "visibleScenesAfterInterruption": 1,
+  "console": []
+}

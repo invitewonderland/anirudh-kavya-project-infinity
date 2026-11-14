@@ -125,3 +125,8 @@ test('replay cancels delayed sound accents',async()=>{
 test('leaving a held promise cancels pending completion, even if its old frame arrives',async()=>{
   const h=await setup({reduced:false});h.click('#openPortal');h.advance(1700);h.go(6);h.pointer('#writePromise','pointerdown',170,240);const pending=[...h.frames.values()];h.go(5);pending.forEach(callback=>callback(10000));assert.equal(h.app.state.promiseWritten,false);assert.equal(h.$('#writePromise').style.getPropertyValue('--hold'),'0');assert.equal(h.$('#scene-promise').hidden,true);await h.close();
 });
+
+
+test('opening portrait uses a longer, cancellable entrance without moving its anchors',async()=>{
+  const h=await setup({reduced:false});h.click('#openPortal');h.advance(1100);const entry=h.animations.findLast(a=>a.element.id==='scene-memories');assert.equal(entry.options.duration,1500);assert.equal(entry.keyframes[0].opacity,0);assert.equal(entry.keyframes[1].opacity,0);assert.ok(entry.keyframes.every(f=>!f.transform));h.advance(200);h.app.go(2);assert.equal(entry.cancelled,true);h.advance(1600);assert.equal(h.app.state.scene,2);assert.equal(h.$('#scene-memories').hidden,true);h.app.replay();h.click('#openPortal');h.advance(1100);const again=h.animations.findLast(a=>a.element.id==='scene-memories');assert.notEqual(again,entry);assert.equal(again.options.duration,1500);await h.close();
+});
