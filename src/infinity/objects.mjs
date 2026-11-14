@@ -1,4 +1,6 @@
 import * as T from 'three';
+import {batchRepeatedMeshes} from './batching.mjs';
+import {mergeRigidMeshes} from './static-geometry.mjs';
 
 export function materials(){
   return {
@@ -24,6 +26,7 @@ export function palace(m){
     const arch=torus(arches,m.gold,2.72,.035,0,2.5,-.55,Math.PI);arch.rotation.z=0;
     torus(arches,m.gold,2.5,.012,0,2.5,-.5,Math.PI);
   }
+  mergeRigidMeshes(arches);
   const count=3600,geometry=new T.BoxGeometry(.8,.8,.8),material=m.gold.clone();
   const fragments=new T.InstancedMesh(geometry,material,count);const scatter=new Float32Array(count*3),dummy=new T.Object3D();
   for(let i=0;i<count;i++){
@@ -79,19 +82,20 @@ export function petalGeometry(){
   for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){const a=y*(cols+1)+x,b=a+cols+1;indices.push(a,b,a+1,b,b+1,a+1);}
   const geo=new T.BufferGeometry();geo.setAttribute('position',new T.Float32BufferAttribute(positions,3));geo.setAttribute('uv',new T.Float32BufferAttribute(uvs,2));geo.setIndex(indices);geo.computeVertexNormals();return geo;
 }
+const sharedStem=new T.TubeGeometry(new T.CatmullRomCurve3([[0,-.2,-.1],[-.08,-.65,-.12],[.09,-1.3,-.2]].map(p=>new T.Vector3(...p))),90,.025,8,false);
 const sharedPetal=petalGeometry();
 const sharedCore=new T.SphereGeometry(.11,18,12);
 const sharedLeaf=new T.SphereGeometry(1,16,10);
-export function rose(m,full=true){
+export function rose(m,full=true,batched=false){
   const group=new T.Group(),flower=new T.Group(),petals=[];flower.rotation.x=.34;group.add(flower);
   for(let layer=0;layer<(full?5:3);layer++){
     const count=full?9:6;
     for(let i=0;i<count;i++){const pivot=new T.Group(),a=i/count*Math.PI*2+layer*.43;flower.add(pivot);pivot.rotation.z=a;pivot.rotation.x=(.5+layer*.12);pivot.position.z=layer*.045;pivot.scale.setScalar(.9-layer*.12);const p=mesh(sharedPetal,m.ivory,pivot,0,-.12,0);petals.push({pivot,base:pivot.rotation.x,layer});}
   }
   mesh(sharedCore,m.gold,flower,0,0,.22);
-  tube(group,m.leaf,[[0,-.2,-.1],[-.08,-.65,-.12],[.09,-1.3,-.2]],.025);
+  mesh(sharedStem,m.leaf,group);
   for(const side of [-1,1]){const leaf=mesh(sharedLeaf,m.leaf,group,side*.17,-.8,-.1);leaf.scale.set(.27,.09,.025);leaf.rotation.z=side*.55;}
-  return {group,flower,petals};
+  return {group,flower,petals,batches:batched?batchRepeatedMeshes(group):[]};
 }
 export function compass(m){
   const group=new T.Group(),rings=[];
@@ -108,7 +112,7 @@ export function grandPiano(m){
   for(let i=0;i<27;i++){const x=-2.18+i*.165,y=.9-.7*(i/26);const line=tube(group,m.gold,[[x,-1.2,.23],[x+.08,-.25,.23],[x+.14,y,.23]],.004);strings.push(line);}
   const emblem=torus(group,m.gold,.31,.008,0,-.72,.25);emblem.scale.y=.7;
   for(let i=0;i<7;i++){const a=i/7*Math.PI*2;mesh(new T.SphereGeometry(.024,10,8),m.gold,group,Math.cos(a)*.3,-.72+Math.sin(a)*.2,.25);}
-  group.rotation.x=-.2;return {group,strings,body};
+  mergeRigidMeshes(group,new Set(strings));group.rotation.x=-.2;return {group,strings,body};
 }
 export function garden(m){
   const group=new T.Group(),branches=[

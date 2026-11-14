@@ -130,3 +130,10 @@ test('leaving a held promise cancels pending completion, even if its old frame a
 test('opening portrait uses a longer, cancellable entrance without moving its anchors',async()=>{
   const h=await setup({reduced:false});h.click('#openPortal');h.advance(1100);const entry=h.animations.findLast(a=>a.element.id==='scene-memories');assert.equal(entry.options.duration,1500);assert.equal(entry.keyframes[0].opacity,0);assert.equal(entry.keyframes[1].opacity,0);assert.ok(entry.keyframes.every(f=>!f.transform));h.advance(200);h.app.go(2);assert.equal(entry.cancelled,true);h.advance(1600);assert.equal(h.app.state.scene,2);assert.equal(h.$('#scene-memories').hidden,true);h.app.replay();h.click('#openPortal');h.advance(1100);const again=h.animations.findLast(a=>a.element.id==='scene-memories');assert.notEqual(again,entry);assert.equal(again.options.duration,1500);await h.close();
 });
+
+
+test('bounded scratch-grid marking matches the original full-grid calculation',async()=>{
+ const h=await setup(),grid=24,reference=new Set();
+ for(let i=0;i<500;i++){const x=((i*73)%503)/503,y=((i*179)%509)/509,r=.02+(i%11)/100;h.app.scratch.mark(x,y,r);for(let gy=0;gy<grid;gy++)for(let gx=0;gx<grid;gx++){const nx=(gx+.5)/grid,ny=(gy+.5)/grid;if((nx-.5)**2+(ny-.5)**2<=.25&&(nx-x)**2+(ny-y)**2<r*r)reference.add(gy*grid+gx);}}
+ assert.deepEqual([...h.app.scratch.cells].sort((a,b)=>a-b),[...reference].sort((a,b)=>a-b));await h.close();
+});

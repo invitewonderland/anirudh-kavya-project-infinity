@@ -1,0 +1,602 @@
+[
+  {
+    "headings": [
+      {
+        "h": 131.7375030517578,
+        "text": "Some storiesopen entire worlds.",
+        "w": 320,
+        "x": 20,
+        "y": 136.8000030517578
+      }
+    ],
+    "scene": "0",
+    "scroll": [
+      360,
+      640,
+      0,
+      0
+    ],
+    "viewport": [
+      360,
+      640
+    ],
+    "visible": [
+      "scene-portal"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 110.1500015258789,
+        "text": "Anirudh & Kavya",
+        "w": 310,
+        "x": 25,
+        "y": 372.75
+      }
+    ],
+    "scene": "1",
+    "scroll": [
+      360,
+      640,
+      0,
+      0
+    ],
+    "viewport": [
+      360,
+      640
+    ],
+    "visible": [
+      "scene-memories"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 86.5250015258789,
+        "text": "Every foreverhas a secret.",
+        "w": 316,
+        "x": 22,
+        "y": 114.8000030517578
+      }
+    ],
+    "scene": "2",
+    "scroll": [
+      360,
+      640,
+      0,
+      0
+    ],
+    "viewport": [
+      360,
+      640
+    ],
+    "visible": [
+      "scene-date"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 112.3000030517578,
+        "text": "A welcomeunder the stars.",
+        "w": 324,
+        "x": 18,
+        "y": 118.8000030517578
+      }
+    ],
+    "scene": "3",
+    "scroll": [
+      360,
+      640,
+      0,
+      0
+    ],
+    "viewport": [
+      360,
+      640
+    ],
+    "visible": [
+      "scene-celebrations"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 78.32500457763672,
+        "text": "If love hada sound, play it.",
+        "w": 320,
+        "x": 20,
+        "y": 110.8000030517578
+      }
+    ],
+    "scene": "4",
+    "scroll": [
+      360,
+      640,
+      0,
+      0
+    ],
+    "viewport": [
+      360,
+      640
+    ],
+    "visible": [
+      "scene-piano"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 85.20000457763672,
+        "text": "Plant a wish.Watch love bloom.",
+        "w": 320,
+        "x": 20,
+        "y": 117.8000030517578
+      }
+    ],
+    "scene": "5",
+    "scroll": [
+      360,
+      640,
+      0,
+      0
+    ],
+    "viewport": [
+      360,
+      640
+    ],
+    "visible": [
+      "scene-garden"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 91.5,
+        "text": "In every lifetime,I would choose you.",
+        "w": 320,
+        "x": 20,
+        "y": 255.3000030517578
+      }
+    ],
+    "scene": "6",
+    "scroll": [
+      360,
+      640,
+      0,
+      0
+    ],
+    "viewport": [
+      360,
+      640
+    ],
+    "visible": [
+      "scene-promise"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 128,
+        "text": "And so,forever.",
+        "w": 310,
+        "x": 25,
+        "y": 193.3000030517578
+      }
+    ],
+    "scene": "7",
+    "scroll": [
+      360,
+      640,
+      0,
+      0
+    ],
+    "viewport": [
+      360,
+      640
+    ],
+    "visible": [
+      "scene-finale"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 175.3874969482422,
+        "text": "Some storiesopen entire worlds.",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 136.8000030517578
+      }
+    ],
+    "scene": "0",
+    "scroll": [
+      394,
+      852,
+      0,
+      0
+    ],
+    "viewport": [
+      394,
+      852
+    ],
+    "visible": [
+      "scene-portal"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 48.17499923706055,
+        "text": "Anirudh & Kavya",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 611.2250366210938
+      }
+    ],
+    "scene": "1",
+    "scroll": [
+      394,
+      852,
+      0,
+      0
+    ],
+    "viewport": [
+      394,
+      852
+    ],
+    "visible": [
+      "scene-memories"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 115.1750030517578,
+        "text": "Every foreverhas a secret.",
+        "w": 349.6000061035156,
+        "x": 22,
+        "y": 114.8000030517578
+      }
+    ],
+    "scene": "2",
+    "scroll": [
+      394,
+      852,
+      0,
+      0
+    ],
+    "viewport": [
+      394,
+      852
+    ],
+    "visible": [
+      "scene-date"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 132.90000915527344,
+        "text": "A welcomeunder the stars.",
+        "w": 357.6000061035156,
+        "x": 18,
+        "y": 157
+      }
+    ],
+    "scene": "3",
+    "scroll": [
+      394,
+      852,
+      0,
+      0
+    ],
+    "viewport": [
+      394,
+      852
+    ],
+    "visible": [
+      "scene-celebrations"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 104.2750015258789,
+        "text": "If love hada sound, play it.",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 110.8000030517578
+      }
+    ],
+    "scene": "4",
+    "scroll": [
+      394,
+      852,
+      0,
+      0
+    ],
+    "viewport": [
+      394,
+      852
+    ],
+    "visible": [
+      "scene-piano"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 113.4000015258789,
+        "text": "Plant a wish.Watch love bloom.",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 124.8000030517578
+      }
+    ],
+    "scene": "5",
+    "scroll": [
+      394,
+      852,
+      0,
+      0
+    ],
+    "viewport": [
+      394,
+      852
+    ],
+    "visible": [
+      "scene-garden"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 93.5999984741211,
+        "text": "In every lifetime,I would choose you.",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 391.3250122070313
+      }
+    ],
+    "scene": "6",
+    "scroll": [
+      394,
+      852,
+      0,
+      0
+    ],
+    "viewport": [
+      394,
+      852
+    ],
+    "visible": [
+      "scene-promise"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 170.40000915527344,
+        "text": "And so,forever.",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 320.3999938964844
+      }
+    ],
+    "scene": "7",
+    "scroll": [
+      394,
+      852,
+      0,
+      0
+    ],
+    "viewport": [
+      394,
+      852
+    ],
+    "visible": [
+      "scene-finale"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 270.7124938964844,
+        "text": "Some storiesopen entire worlds.",
+        "w": 1400,
+        "x": 20,
+        "y": 164.40000915527344
+      }
+    ],
+    "scene": "0",
+    "scroll": [
+      1440,
+      900,
+      0,
+      0
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "visible": [
+      "scene-portal"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 82.80000305175781,
+        "text": "Anirudh & Kavya",
+        "w": 1400,
+        "x": 20,
+        "y": 636.7000122070312
+      }
+    ],
+    "scene": "1",
+    "scroll": [
+      1440,
+      900,
+      0,
+      0
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "visible": [
+      "scene-memories"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 187.1999969482422,
+        "text": "Every foreverhas a secret.",
+        "w": 544.3125,
+        "x": 115.20000457763672,
+        "y": 366.8000183105469
+      }
+    ],
+    "scene": "2",
+    "scroll": [
+      1440,
+      900,
+      0,
+      0
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "visible": [
+      "scene-date"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 228.8000030517578,
+        "text": "A welcomeunder the stars.",
+        "w": 676.7999877929688,
+        "x": 115.20000457763672,
+        "y": 245.1999969482422
+      }
+    ],
+    "scene": "3",
+    "scroll": [
+      1440,
+      900,
+      0,
+      0
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "visible": [
+      "scene-celebrations"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 187.1999969482422,
+        "text": "If love hada sound, play it.",
+        "w": 504,
+        "x": 100.8000030517578,
+        "y": 248.8000030517578
+      }
+    ],
+    "scene": "4",
+    "scroll": [
+      1440,
+      900,
+      0,
+      0
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "visible": [
+      "scene-piano"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 166.40000915527344,
+        "text": "Plant a wish.Watch love bloom.",
+        "w": 576,
+        "x": 100.8000030517578,
+        "y": 230.8000030517578
+      }
+    ],
+    "scene": "5",
+    "scroll": [
+      1440,
+      900,
+      0,
+      0
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "visible": [
+      "scene-garden"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 141.4250030517578,
+        "text": "In every lifetime,I would choose you.",
+        "w": 648,
+        "x": 705.6000366210938,
+        "y": 265.1750183105469
+      }
+    ],
+    "scene": "6",
+    "scroll": [
+      1440,
+      900,
+      0,
+      0
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "visible": [
+      "scene-promise"
+    ]
+  },
+  {
+    "headings": [
+      {
+        "h": 249.6000061035156,
+        "text": "And so,forever.",
+        "w": 633.6000366210938,
+        "x": 734.4000244140625,
+        "y": 212.8000030517578
+      }
+    ],
+    "scene": "7",
+    "scroll": [
+      1440,
+      900,
+      0,
+      0
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "visible": [
+      "scene-finale"
+    ]
+  }
+]

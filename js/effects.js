@@ -9,12 +9,12 @@
       this.sprite=document.createElement('canvas');this.sprite.width=64;this.sprite.height=64;
       const c=this.sprite.getContext('2d');
       if(c){const g=c.createRadialGradient(32,32,0,32,32,30);g.addColorStop(0,'#fff8df');g.addColorStop(.1,'#ffe2a5');g.addColorStop(.3,'#dbb66b65');g.addColorStop(1,'#d6ad5a00');c.fillStyle=g;c.fillRect(0,0,64,64);c.fillStyle='#fff2cc';c.beginPath();c.moveTo(32,16);c.lineTo(35,29);c.lineTo(48,32);c.lineTo(35,35);c.lineTo(32,48);c.lineTo(29,35);c.lineTo(16,32);c.lineTo(29,29);c.fill();}
-      try{if(window.InfinityDirector){this.director=new window.InfinityDirector(document.getElementById('world'));this.director.onFailure=()=>{this.director=null;this.wake();};}}catch(error){console.warn('3D initialization unavailable; using interactive Canvas.',error);this.director=null;}
+      try{if(window.InfinityDirector){this.director=new window.InfinityDirector(document.getElementById('world'));this.director.onFailure=()=>{this.director=null;this.resize();this.wake();};}}catch(error){console.warn('3D initialization unavailable; using interactive Canvas.',error);this.director=null;}
       this.resize();window.addEventListener('resize',()=>this.resize(),{passive:true});
       this.motion.addEventListener('change',()=>{this.clear();this.wake();});
       document.addEventListener('visibilitychange',()=>{this.active=!document.hidden;this.clear();if(this.active)this.wake();});this.wake();
     }
-    resize(){this.width=innerWidth;this.height=window.visualViewport?.height||innerHeight;const dpr=devicePixelRatio||1;this.canvas.width=Math.round(this.width*dpr);this.canvas.height=Math.round(this.height*dpr);this.ctx?.setTransform(dpr,0,0,dpr,0,0);}
+    resize(){this.width=innerWidth;this.height=window.visualViewport?.height||innerHeight;if(this.director)return;const dpr=devicePixelRatio||1;if(this.canvas.width===Math.round(this.width*dpr)&&this.canvas.height===Math.round(this.height*dpr))return;this.canvas.width=Math.round(this.width*dpr);this.canvas.height=Math.round(this.height*dpr);this.ctx?.setTransform(dpr,0,0,dpr,0,0);}
     clear(){this.director?.clear();cancelAnimationFrame(this.raf);this.raf=0;this.particles.length=0;this.ctx?.clearRect(0,0,this.width,this.height);}
     setScene(index){this.particles.length=0;this.ctx?.clearRect(0,0,this.width,this.height);this.scene=index;this.director?.setScene(index);this.wake();}
     refreshLayout(){if(this.director){this.director.layoutDirty=true;this.director.wake();}}

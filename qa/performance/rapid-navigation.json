@@ -1,0 +1,56 @@
+[
+  {
+    "h": 800,
+    "leaked": [],
+    "scene": "2",
+    "visible": [
+      "scene-date"
+    ],
+    "w": 450
+  },
+  {
+    "h": 800,
+    "leaked": [],
+    "scene": "5",
+    "visible": [
+      "scene-garden"
+    ],
+    "w": 450
+  },
+  {
+    "h": 800,
+    "leaked": [],
+    "scene": "4",
+    "visible": [
+      "scene-piano"
+    ],
+    "w": 450
+  },
+  {
+    "h": 800,
+    "leaked": [],
+    "scene": "1",
+    "visible": [
+      "scene-memories"
+    ],
+    "w": 450
+  },
+  {
+    "h": 800,
+    "leaked": [],
+    "scene": "7",
+    "visible": [
+      "scene-finale"
+    ],
+    "w": 450
+  },
+  {
+    "h": 800,
+    "leaked": [],
+    "scene": "2",
+    "visible": [
+      "scene-date"
+    ],
+    "w": 450
+  }
+]

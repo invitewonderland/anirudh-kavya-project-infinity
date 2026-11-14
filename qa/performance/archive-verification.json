@@ -1,0 +1,18 @@
+{
+  "archive": "Anirudh-Kavya-Project-Infinity.zip",
+  "sha256": "5e1ab38d714d9340e3a065eb38fc32ab25f45294605a85b7426d75f2b849b7f7",
+  "sizeBytes": 12516215,
+  "files": 139,
+  "allArchivedFilesMatchWorkspace": true,
+  "requiredFilesPresent": [
+    "index.html",
+    "styles.css",
+    "infinity.css",
+    "polish.css",
+    "js/infinity.bundle.js",
+    "js/particle-random.worker.js",
+    ".nojekyll",
+    "assets/audio/A_Canopy_of_White_Roses.mp3"
+  ],
+  "note": "This verification file is outside the ZIP to avoid self-reference."
+}

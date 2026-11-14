@@ -1,0 +1,72 @@
+{
+  "baselineCommit": "88eebba98c3a2e0d0a20ab9bcf73a4a547ba8d8b",
+  "date": "2026-11-14",
+  "physicalPhoneTested": false,
+  "targetPhone": "Samsung Galaxy A56 5G",
+  "rows": [
+    {
+      "scene": 0,
+      "name": "Palace opening",
+      "gpuReductionPercent": 36.42559828824554,
+      "cpuCombinedBeforeMs": 3.827222222255336,
+      "cpuCombinedAfterMs": 1.8011111110448839,
+      "estimatedFpsFromMeanFrameInterval": 48.72766648619384
+    },
+    {
+      "scene": 1,
+      "name": "Couple portraits",
+      "gpuReductionPercent": 46.366431032621676,
+      "cpuCombinedBeforeMs": 2.166666666169961,
+      "cpuCombinedAfterMs": 0.9340000000596047,
+      "estimatedFpsFromMeanFrameInterval": 100.8725475361881
+    },
+    {
+      "scene": 2,
+      "name": "Date astrolabe",
+      "gpuReductionPercent": 45.52176005332371,
+      "cpuCombinedBeforeMs": 3.118848169349251,
+      "cpuCombinedAfterMs": 1.4505102045986118,
+      "estimatedFpsFromMeanFrameInterval": 85.62691131498471
+    },
+    {
+      "scene": 3,
+      "name": "Celebrations",
+      "gpuReductionPercent": 41.774647946374486,
+      "cpuCombinedBeforeMs": 2.360975610337606,
+      "cpuCombinedAfterMs": 1.3798029566633292,
+      "estimatedFpsFromMeanFrameInterval": 75.79434716051229
+    },
+    {
+      "scene": 4,
+      "name": "Royal piano",
+      "gpuReductionPercent": 43.358210666602126,
+      "cpuCombinedBeforeMs": 3.1658536581004535,
+      "cpuCombinedAfterMs": 1.3197969529531934,
+      "estimatedFpsFromMeanFrameInterval": 87.94250256684967
+    },
+    {
+      "scene": 5,
+      "name": "Wish garden",
+      "gpuReductionPercent": 36.516302737953076,
+      "cpuCombinedBeforeMs": 6.148148147044359,
+      "cpuCombinedAfterMs": 3.514646465128118,
+      "estimatedFpsFromMeanFrameInterval": 60.81641428878582
+    },
+    {
+      "scene": 6,
+      "name": "Timeless promise",
+      "gpuReductionPercent": 40.64185389180031,
+      "cpuCombinedBeforeMs": 2.002450979369528,
+      "cpuCombinedAfterMs": 0.8699999986588954,
+      "estimatedFpsFromMeanFrameInterval": 89.84322357486178
+    },
+    {
+      "scene": 7,
+      "name": "Grand finale",
+      "gpuReductionPercent": 41.33560330995787,
+      "cpuCombinedBeforeMs": 2.640394087789094,
+      "cpuCombinedAfterMs": 0.9149253724226312,
+      "estimatedFpsFromMeanFrameInterval": 90.29243969273624
+    }
+  ]
+}

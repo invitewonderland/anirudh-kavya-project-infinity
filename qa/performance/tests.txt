@@ -1,0 +1,39 @@
+✔ interrupted GPU transitions start from the rendered mixture, never the abandoned destination (0.8895ms)
+✔ background snapshots ping-pong targets and always restore the render target (0.5574ms)
+✔ scene retirement hides all old GPU spans without a capacity-sized upload (0.2816ms)
+✔ celebration selection outside its room cannot replace another scene background (0.2337ms)
+✔ one fullscreen journey, all assets local and identities preserved (1044.4583ms)
+✔ gesture entry, forward/back navigation, hidden-scene inertness and replay (51.6119ms)
+✔ blocked audio never blocks entry, and the next gesture retries it (25.3287ms)
+✔ all eight original photos are explorable without a separate mode (20.8133ms)
+✔ real scratch geometry, accessible reveal, and retained coverage on resize (40.8556ms)
+✔ three distinct worlds disclose their correct event details (28.5082ms)
+✔ piano has thirteen notes, volume changes its audio gain, and playback is bounded (41.2814ms)
+✔ blessings are safely rendered, locally bounded, and handle malformed storage (46.6207ms)
+✔ sound levels stay synchronised and piano ducking respects the score level (30.0879ms)
+✔ promise, finale and replay reset correctly, and particles have a hard cap (34.8376ms)
+✔ form submission plants a wish and rapid navigation keeps the latest destination (27.4381ms)
+✔ every transition hides outgoing content immediately and cancels interrupted animations (69.5017ms)
+✔ replay cancels delayed sound accents (44.9312ms)
+✔ leaving a held promise cancels pending completion, even if its old frame arrives (38.4555ms)
+✔ opening portrait uses a longer, cancellable entrance without moving its anchors (34.6523ms)
+✔ bounded scratch-grid marking matches the original full-grid calculation (25.78ms)
+✔ sculpted petals have finite normals, valid topology and useful bounds (2.6697ms)
+✔ palace cloth and assembled fragments have valid geometry and transforms (94.3263ms)
+✔ extruded piano and physical celebration objects have valid surfaces (81.3371ms)
+✔ living garden batches preserve source transforms when petals open (80.0656ms)
+✔ particle ring spans retain every live particle across wrap, overwrite, and expiration (27.1957ms)
+✔ instanced animated meshes preserve world transforms and mask unplanted wish roots (3.006ms)
+✔ rigid batching retains the complete transformed vertex geometry (3.6281ms)
+✔ fused output keeps ACES, sRGB, all three chromatic samples, and full bloom input (1.3129ms)
+✔ worker prepares full-capacity bounded trajectories with an isotropic distribution (185.924ms)
+✔ portrait reveal is continuous and monotonic, with gentle arrival and completion (1.1073ms)
+✔ each portrait entry has its own clock and reduced motion is immediate (0.1797ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1725.8974

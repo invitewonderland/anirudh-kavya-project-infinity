@@ -22,7 +22,7 @@
       // Restore revealed cells after orientation/size changes instead of resetting the guest's work.
       c.globalCompositeOperation='destination-out';for(const cell of this.cells){const x=cell%this.grid,y=Math.floor(cell/this.grid);c.fillRect(x/this.grid*r.width,y/this.grid*r.height,r.width/this.grid+1,r.height/this.grid+1);}c.globalCompositeOperation='source-over';
     }
-    mark(x,y,radius){for(let gy=0;gy<this.grid;gy++)for(let gx=0;gx<this.grid;gx++){const nx=(gx+.5)/this.grid,ny=(gy+.5)/this.grid;if((nx-.5)**2+(ny-.5)**2>.25)continue;if((nx-x)**2+(ny-y)**2<radius**2)this.cells.add(gy*this.grid+gx);}}
+    mark(x,y,radius){const loX=Math.max(0,Math.floor((x-radius)*this.grid)),hiX=Math.min(this.grid-1,Math.ceil((x+radius)*this.grid)),loY=Math.max(0,Math.floor((y-radius)*this.grid)),hiY=Math.min(this.grid-1,Math.ceil((y+radius)*this.grid));for(let gy=loY;gy<=hiY;gy++)for(let gx=loX;gx<=hiX;gx++){const nx=(gx+.5)/this.grid,ny=(gy+.5)/this.grid;if((nx-.5)**2+(ny-.5)**2>.25)continue;if((nx-x)**2+(ny-y)**2<radius**2)this.cells.add(gy*this.grid+gx);}}
     coverage(){return this.cells.size/(Math.PI*(this.grid/2)**2);}
     erase(e){
       if(!this.ctx||this.revealed)return;const r=this.canvas.getBoundingClientRect(),x=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),y=Math.max(0,Math.min(1,(e.clientY-r.top)/r.height));const brush=.095,c=this.ctx;

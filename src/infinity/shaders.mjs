@@ -28,7 +28,10 @@ vec3 photograph(sampler2D image,vec2 uv,float ar,float s){
  c=mix(c,vec3(.012,.045,.06),outside);if(s<-.5)c=raw;
  return c;
 }
-void main(){vec2 uv=vUv;float n=fbm(vec3(uv*5.,uTime*.17));float travel=distance((uv-vec2(.5,.49))*vec2(uAspect,1.),vec2(0));float edge=uProgress*1.7-travel+n*.15;
+void main(){vec2 uv=vUv;
+ if(uProgress>=.999999){gl_FragColor=vec4(photograph(uTo,uv,uToAspect,uScene),1.);return;}
+ if(uProgress<=0.){gl_FragColor=vec4(photograph(uFrom,uv,uFromAspect,uFromScene),1.);return;}
+ float n=fbm(vec3(uv*5.,uTime*.17));float travel=distance((uv-vec2(.5,.49))*vec2(uAspect,1.),vec2(0));float edge=uProgress*1.7-travel+n*.15;
  float mask=uProgress<=.001?0.:uProgress>=.999?1.:smoothstep(-.055,.055,edge);
  vec3 a=photograph(uFrom,uv,uFromAspect,uFromScene),b=photograph(uTo,uv,uToAspect,uScene);vec3 col=mix(a,b,mask);
  float filament=(1.-smoothstep(.0,.045,abs(edge)))*step(.01,uProgress)*step(uProgress,.99);
