@@ -1,0 +1,46 @@
+✔ curtain timing stays bounded and finishes before the wall-clock handoff even after skipped frames (1.166ms)
+✔ formations preserve every emitted slot and keep staggered births inside the ledger lifetime (2.7336ms)
+✔ interrupted GPU transitions start from the rendered mixture, never the abandoned destination (0.8779ms)
+✔ background snapshots ping-pong targets and always restore the render target (0.3906ms)
+✔ scene retirement hides all old GPU spans without a capacity-sized upload (0.2647ms)
+✔ celebration selection outside its room cannot replace another scene background (0.186ms)
+✔ an interrupted portrait dissolve captures the mixture into a different native-size target (0.3577ms)
+✔ one fullscreen journey, all assets local and identities preserved (1143.5203ms)
+✔ gesture entry, forward/back navigation, hidden-scene inertness and replay (53.2887ms)
+✔ blocked audio never blocks entry, and the next gesture retries it (25.3027ms)
+✔ all eight original photos are explorable without a separate mode (31.2648ms)
+✔ real scratch geometry, accessible reveal, and retained coverage on resize (35.9889ms)
+✔ three distinct worlds disclose their correct event details (27.5918ms)
+✔ piano has thirteen notes, volume changes its audio gain, and playback is bounded (41.6848ms)
+✔ blessings are safely rendered, locally bounded, and handle malformed storage (41.8146ms)
+✔ sound levels stay synchronised and piano ducking respects the score level (20.8218ms)
+✔ promise, finale and replay reset correctly, and particles have a hard cap (35.1361ms)
+✔ form submission plants a wish and rapid navigation keeps the latest destination (34.106ms)
+✔ every transition hides outgoing content immediately and cancels interrupted animations (70.1161ms)
+✔ replay cancels delayed sound accents (20.605ms)
+✔ leaving a held promise cancels pending completion, even if its old frame arrives (22.8604ms)
+✔ opening portrait uses a longer, cancellable entrance without moving its anchors (29.1754ms)
+✔ bounded scratch-grid marking matches the original full-grid calculation (34.3393ms)
+✔ first-tap waits for the renderer and a replay invalidates its pending opening (21.2347ms)
+✔ repeated opening, celebration and finale taps cannot stack their effects (23.8ms)
+✔ leaving the date cancels its captured gesture and retains smooth brush paths across resizing (27.8273ms)
+✔ sculpted petals have finite normals, valid topology and useful bounds (2.3653ms)
+✔ palace cloth and assembled fragments have valid geometry and transforms (61.0097ms)
+✔ extruded piano and physical celebration objects have valid surfaces (68.1526ms)
+✔ living garden batches preserve source transforms when petals open (83.9693ms)
+✔ promise heart remains finite and mirrored through both halves under strict GLSL pow rules (1.9104ms)
+✔ particle ring spans retain every live particle across wrap, overwrite, and expiration (21.915ms)
+✔ instanced animated meshes preserve world transforms and mask unplanted wish roots (2.1724ms)
+✔ rigid batching retains the complete transformed vertex geometry (2.9833ms)
+✔ fused output keeps ACES, sRGB, all three chromatic samples, and full bloom input (1.3038ms)
+✔ worker prepares full-capacity bounded trajectories with an isotropic distribution (169.276ms)
+✔ portrait reveal is continuous and monotonic, with gentle arrival and completion (0.9735ms)
+✔ each portrait entry has its own clock and reduced motion is immediate (0.1191ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1880.5383

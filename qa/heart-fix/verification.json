@@ -1,0 +1,26 @@
+{
+  "testsPassed": 38,
+  "browserWarningsOrErrors": 0,
+  "checkedViewports": [
+    [
+      412,
+      746
+    ],
+    [
+      320,
+      568
+    ],
+    [
+      450,
+      800
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "baselineOriginalFilesChecked": 38,
+  "changedOriginalFiles": [],
+  "browserAssetHashesMatch": 8,
+  "physicalGalaxyA56Tested": false
+}

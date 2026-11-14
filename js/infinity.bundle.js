@@ -4503,7 +4503,8 @@ void main(){vec2 p=gl_PointCoord-.5;float c=cos(vSpin),s=sin(vSpin);p=mat2(c,-s,
 attribute float aT;attribute float aSide;uniform float uTime,uScene,uIndex,uEnergy,uKick,uScale;uniform vec3 uAnchor;varying float vT,vSide;
 vec3 curve(float t){float a=t*6.2831853+uTime*.1+uIndex*.7;vec3 p;
  if(uScene>6.5){float h=t*6.2831853;p=vec3(sin(h)*3.05,sin(h*2.)*1.45,sin(a*2.)*.35);p.xy*=1.+(uIndex-6.5)*.006;}
- else if(uScene>5.5){float h=t*6.2831853;p=vec3(16.*pow(sin(h),3.),13.*cos(h)-5.*cos(2.*h)-2.*cos(3.*h)-cos(4.*h),0.)*.17;p.xy*=1.+(uIndex-6.5)*.006;p.z=sin(a*2.)*.5;}
+ // Preserve the signed cube: GLSL pow(negative, 3) is undefined on mobile GPUs.
+ else if(uScene>5.5){float h=t*6.2831853;float sh=sin(h);p=vec3(16.*sh*sh*sh,13.*cos(h)-5.*cos(2.*h)-2.*cos(3.*h)-cos(4.*h),0.)*.17;p.xy*=1.+(uIndex-6.5)*.006;p.z=sin(a*2.)*.5;}
  else if(uScene>4.5){p=vec3(sin(a*2.)*(1.+uIndex*.08),cos(a)*2.6,sin(a)*1.2);}
  else if(uScene>3.5){p=vec3(cos(a)*(2.4+uIndex*.12),sin(a*2.)*(.5+uEnergy)+.5,sin(a)*1.6);}
  else if(uScene>1.5&&uScene<2.5){float radius=2.7+uIndex*.035;p=vec3(cos(a)*radius,sin(a)*radius,sin(a*2.)*.18);}
