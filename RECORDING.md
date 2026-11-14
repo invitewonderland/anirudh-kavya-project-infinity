@@ -12,10 +12,10 @@ Before recording, let the opening and first portrait load, set the phone's media
 | 2–4 s | Briefly show the couple; touch the next arrow | Human connection before the next surprise |
 | 4–7 s | Scratch two or three confident strokes across the gold | Tactile foil, flying gold flakes, date revealed |
 | 7–10 s | Next; light the welcome lantern, or choose the wedding and touch the rose | An entire environment reacts |
-| 10–14 s | Next; play C–E–G on the ivory piano | Physical piano, sound-reactive light ribbons and butterflies |
+| 10–14 s | Next; play C–E–G on the ivory piano | Ebony and gold instrument, musical notes and sound-reactive ribbons |
 | 14–16 s | Next; touch the garden's central rose | A wave opens the 3D flowers without pausing to type |
 | 16–19 s | Next; hold the promise seal | A heart is drawn in light |
-| 19–22 s | Next; make the sky ours | Finale and Invite Wonderland invitation to create their own |
+| 19–22 s | Next; make the sky ours | Overhead stars, a golden infinity constellation and Invite Wonderland credit |
 
 The timings are suggestions, not a timer or automatic sequence. A recording can be longer if you linger, explore photographs, select all three celebration worlds, play your own tune or write a personal blessing. Fast navigation completes a running transition before beginning the next, so an intentional quick tap is not discarded.
 

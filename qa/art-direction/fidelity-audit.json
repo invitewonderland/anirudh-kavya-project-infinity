@@ -1,0 +1,1 @@
+{"width":128,"height":128,"channelSamples":49152,"maxChannelDifference":1,"meanChannelDifference":0.026468912760416668,"channelsOverOne":0,"unit":"8-bit output code values","reference":"Original UnrealBloomPass + Film ShaderPass + OutputPass","optimized":"Fused bloom + film + OutputPass","retained":{"hdr":"HalfFloat","sceneSamples":4,"bloomMips":5,"exposure":0.93}}

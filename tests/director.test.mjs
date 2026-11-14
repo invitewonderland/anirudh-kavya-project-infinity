@@ -30,3 +30,11 @@ test('celebration selection outside its room cannot replace another scene backgr
   const d=Object.create(InfinityDirector.prototype);let changed=0;Object.assign(d,{sceneIndex:0,setBackground(){changed++},retireParticles(){},wake(){}});
   d.selectAct(2);assert.equal(changed,0);assert.equal(d.act,2);d.sceneIndex=3;d.selectAct(1);assert.equal(changed,1);
 });
+
+test('an interrupted portrait dissolve captures the mixture into a different native-size target',()=>{
+  const d=Object.create(InfinityDirector.prototype),texture={image:{width:1122,height:1402}},targets=[0,1].map(i=>({texture:'portrait-snapshot-'+i,setSize(w,h){this.width=w;this.height=h}}));let active='screen',reads=[];
+  Object.assign(d,{photoMat:{map:texture},portraitBlend:{value:.4},previousPortrait:{value:'previous'},portraitTargets:targets,portraitCaptureIndex:0,portraitCaptureMaterial:{uniforms:{uTo:{value:null}}},portraitCaptureScene:{},camera:{},renderer:{getRenderTarget:()=>active,setRenderTarget:t=>{active=t},render:()=>reads.push(active)}});
+  assert.equal(d.capturePortrait(),'portrait-snapshot-1');assert.equal(active,'screen');assert.equal(targets[1].width,1122);assert.equal(targets[1].height,1402);assert.equal(d.capturePortrait(),'portrait-snapshot-0');assert.notEqual(reads[0],reads[1]);
+  d.portraitBlend.value=0;assert.equal(d.capturePortrait(),'previous');d.portraitBlend.value=1;assert.equal(d.capturePortrait(),texture);assert.equal(reads.length,2);
+  d.portraitBlend.value=.3;d.renderer.render=()=>{throw new Error('context lost')};assert.throws(()=>d.capturePortrait());assert.equal(active,'screen');
+});

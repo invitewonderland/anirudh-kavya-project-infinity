@@ -1,0 +1,99 @@
+{
+  "baselineCommit": "281e79f6181355ef05ec5d767def7c73335220a6",
+  "version": "2.3.0",
+  "physicalPhoneTested": false,
+  "targetPhone": "Samsung Galaxy A56 5G",
+  "layoutChecks": 52,
+  "layoutFailures": 0,
+  "fidelityAudit": {
+    "width": 128,
+    "height": 128,
+    "channelSamples": 49152,
+    "maxChannelDifference": 1,
+    "meanChannelDifference": 0.026468912760416668,
+    "channelsOverOne": 0,
+    "unit": "8-bit output code values",
+    "reference": "Original UnrealBloomPass + Film ShaderPass + OutputPass",
+    "optimized": "Fused bloom + film + OutputPass",
+    "retained": {
+      "hdr": "HalfFloat",
+      "sceneSamples": 4,
+      "bloomMips": 5,
+      "exposure": 0.93
+    }
+  },
+  "performance": [
+    {
+      "scene": 0,
+      "name": "Palace",
+      "gpuReductionPercent": 3.7881436712020045,
+      "beforeGpuMeanMs": 14.50514766666667,
+      "afterGpuMeanMs": 13.95567183333333,
+      "afterMeanFrameMs": 14.609999999999998,
+      "fpsFromMeanFrameInterval": 68.44626967830254
+    },
+    {
+      "scene": 1,
+      "name": "Portraits",
+      "gpuReductionPercent": -1.3898899143501842,
+      "beforeGpuMeanMs": 6.3226830000000005,
+      "afterGpuMeanMs": 6.410561333333334,
+      "afterMeanFrameMs": 7.072500000000006,
+      "fpsFromMeanFrameInterval": 141.39271827500872
+    },
+    {
+      "scene": 2,
+      "name": "Date",
+      "gpuReductionPercent": 5.746680982854069,
+      "beforeGpuMeanMs": 7.501066,
+      "afterGpuMeanMs": 7.0700036666666675,
+      "afterMeanFrameMs": 7.797916666666667,
+      "fpsFromMeanFrameInterval": 128.23938017632915
+    },
+    {
+      "scene": 3,
+      "name": "Celebrations",
+      "gpuReductionPercent": 6.47794542303326,
+      "beforeGpuMeanMs": 8.706291833333333,
+      "afterGpuMeanMs": 8.142302999999998,
+      "afterMeanFrameMs": 9.01500000000001,
+      "fpsFromMeanFrameInterval": 110.92623405435374
+    },
+    {
+      "scene": 4,
+      "name": "Piano",
+      "gpuReductionPercent": 5.307371796970928,
+      "beforeGpuMeanMs": 7.583329666666663,
+      "afterGpuMeanMs": 7.180854166666667,
+      "afterMeanFrameMs": 7.797500000000006,
+      "fpsFromMeanFrameInterval": 128.24623276691239
+    },
+    {
+      "scene": 5,
+      "name": "Garden",
+      "gpuReductionPercent": 3.195088975410354,
+      "beforeGpuMeanMs": 11.060584000000002,
+      "afterGpuMeanMs": 10.7071885,
+      "afterMeanFrameMs": 11.304583333333296,
+      "fpsFromMeanFrameInterval": 88.45969555121476
+    },
+    {
+      "scene": 6,
+      "name": "Promise",
+      "gpuReductionPercent": 7.376230089946523,
+      "beforeGpuMeanMs": 7.359556666666665,
+      "afterGpuMeanMs": 6.816698833333334,
+      "afterMeanFrameMs": 7.594583333333321,
+      "fpsFromMeanFrameInterval": 131.67279310912403
+    },
+    {
+      "scene": 7,
+      "name": "Finale",
+      "gpuReductionPercent": 10.868781156778818,
+      "beforeGpuMeanMs": 7.609031666666668,
+      "afterGpuMeanMs": 6.782022666666668,
+      "afterMeanFrameMs": 7.768333333333332,
+      "fpsFromMeanFrameInterval": 128.72774082814848
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "fingerprintedAssets": [
+    "styles.css",
+    "infinity.css",
+    "polish.css",
+    "js/infinity.bundle.js",
+    "js/effects.js",
+    "js/audio.js",
+    "js/scratch.js",
+    "js/app.js"
+  ],
+  "allHashesMatch": true,
+  "workerPresent": true,
+  "originalMediaMatch": true
+}

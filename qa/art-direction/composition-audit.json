@@ -1,0 +1,2374 @@
+[
+  {
+    "boxes": [
+      {
+        "bottom": 351.6625061035156,
+        "h": 255.6625061035156,
+        "right": 430.3999938964844,
+        "selector": ".portal-copy",
+        "w": 410.3999938964844,
+        "x": 20,
+        "y": 96
+      },
+      {
+        "bottom": 603.2250061035156,
+        "h": 136,
+        "right": 293.1999969482422,
+        "selector": ".portal-seal",
+        "w": 136,
+        "x": 157.1999969482422,
+        "y": 467.2250061035156
+      },
+      {
+        "bottom": 729.9999876022339,
+        "h": 11.199999809265137,
+        "right": 430.3999938964844,
+        "selector": ".portal-footnote",
+        "w": 410.3999938964844,
+        "x": 20,
+        "y": 718.7999877929688
+      }
+    ],
+    "label": "opening",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "0",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 652.0000152587891,
+        "h": 119.1750030517578,
+        "right": 425.3999938964844,
+        "selector": ".memory-caption",
+        "w": 400.3999938964844,
+        "x": 25,
+        "y": 532.8250122070312
+      },
+      {
+        "bottom": 720,
+        "h": 50,
+        "right": 425.3999938964844,
+        "selector": ".memory-gem",
+        "w": 400.3999938964844,
+        "x": 25,
+        "y": 670
+      }
+    ],
+    "label": "first portrait",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 652.0000152587891,
+        "h": 174.3000030517578,
+        "right": 425.3999938964844,
+        "selector": ".memory-caption",
+        "w": 400.3999938964844,
+        "x": 25,
+        "y": 477.7000122070313
+      },
+      {
+        "bottom": 720,
+        "h": 50,
+        "right": 425.3999938964844,
+        "selector": ".memory-gem",
+        "w": 400.3999938964844,
+        "x": 25,
+        "y": 670
+      }
+    ],
+    "label": "long portrait caption",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 222.9499969482422,
+        "h": 132.9499969482422,
+        "right": 428.3999938964844,
+        "selector": ".scene-heading",
+        "w": 406.3999938964844,
+        "x": 22,
+        "y": 90
+      },
+      {
+        "bottom": 542.3500061035156,
+        "h": 260.3999938964844,
+        "right": 355.3999938964844,
+        "selector": "#dateRelic",
+        "w": 260.3999938964844,
+        "x": 95,
+        "y": 281.95001220703125
+      },
+      {
+        "bottom": 704.0000381469727,
+        "h": 102.6500015258789,
+        "right": 428.3999938964844,
+        "selector": ".date-after",
+        "w": 406.3999938964844,
+        "x": 22,
+        "y": 601.3500366210938
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 222.9499969482422,
+        "h": 132.9499969482422,
+        "right": 428.3999938964844,
+        "selector": ".scene-heading",
+        "w": 406.3999938964844,
+        "x": 22,
+        "y": 90
+      },
+      {
+        "bottom": 541.5499877929688,
+        "h": 260.3999938964844,
+        "right": 355.3999938964844,
+        "selector": "#dateRelic",
+        "w": 260.3999938964844,
+        "x": 95,
+        "y": 281.1499938964844
+      },
+      {
+        "bottom": 704,
+        "h": 104.25,
+        "right": 428.3999938964844,
+        "selector": ".date-after",
+        "w": 406.3999938964844,
+        "x": 22,
+        "y": 599.75
+      }
+    ],
+    "label": "date revealed",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 274,
+        "h": 154,
+        "right": 432.3999938964844,
+        "selector": ".celebration-heading",
+        "w": 414.3999938964844,
+        "x": 18,
+        "y": 120
+      },
+      {
+        "bottom": 560.2367172241211,
+        "h": 103.8499984741211,
+        "right": 430.3999938964844,
+        "selector": "#eventRevelation",
+        "w": 410.3999938964844,
+        "x": 20,
+        "y": 456.38671875
+      },
+      {
+        "bottom": 680,
+        "h": 78,
+        "right": 425.3999938964844,
+        "selector": ".world-select",
+        "w": 400.3999938964844,
+        "x": 25,
+        "y": 602
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "3",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 241.90000915527344,
+        "h": 153.90000915527344,
+        "right": 430.3999938964844,
+        "selector": ".scene-heading",
+        "w": 410.3999938964844,
+        "x": 20,
+        "y": 88
+      },
+      {
+        "bottom": 563.6000061035156,
+        "h": 273.51251220703125,
+        "right": 418.86249351501465,
+        "selector": "#grandPiano",
+        "w": 387.3374938964844,
+        "x": 31.524999618530273,
+        "y": 290.0874938964844
+      },
+      {
+        "bottom": 673.7999877929688,
+        "h": 62,
+        "right": 409.8750076293946,
+        "selector": ".piano-controls",
+        "w": 369.3500061035156,
+        "x": 40.525001525878906,
+        "y": 611.7999877929688
+      },
+      {
+        "bottom": 704.9999885559082,
+        "h": 19.200000762939453,
+        "right": 430.3999938964844,
+        "selector": ".piano-hint",
+        "w": 410.3999938964844,
+        "x": 20,
+        "y": 685.7999877929688
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "4",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 231.27500915527344,
+        "h": 139.27500915527344,
+        "right": 430.3999938964844,
+        "selector": ".scene-heading",
+        "w": 410.3999938964844,
+        "x": 20,
+        "y": 92
+      },
+      {
+        "bottom": 480,
+        "h": 224,
+        "right": 423.3750057220459,
+        "selector": ".wish-tree",
+        "w": 396.3500061035156,
+        "x": 27.024999618530273,
+        "y": 256
+      },
+      {
+        "bottom": 631.8000030517578,
+        "h": 127.8000030517578,
+        "right": 400.8625144958496,
+        "selector": ".wish-form",
+        "w": 351.32501220703125,
+        "x": 49.53750228881836,
+        "y": 504
+      },
+      {
+        "bottom": 704.0000381469727,
+        "h": 51.837501525878906,
+        "right": 405.3625144958496,
+        "selector": ".bloom-message",
+        "w": 360.3250122070313,
+        "x": 45.03750228881836,
+        "y": 652.1625366210938
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "5",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 568.0000152587891,
+        "h": 244.40000915527344,
+        "right": 430.3999938964844,
+        "selector": ".promise-copy",
+        "w": 410.3999938964844,
+        "x": 20,
+        "y": 323.6000061035156
+      },
+      {
+        "bottom": 654.5,
+        "h": 77,
+        "right": 263.6999969482422,
+        "selector": "#writePromise",
+        "w": 77,
+        "x": 186.6999969482422,
+        "y": 577.5
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "6",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 551.7000122070312,
+        "h": 266.2375183105469,
+        "right": 425.3999938964844,
+        "selector": ".finale-copy",
+        "w": 400.3999938964844,
+        "x": 25,
+        "y": 285.4624938964844
+      },
+      {
+        "bottom": 702.0000152587891,
+        "h": 134.3000030517578,
+        "right": 425.3999938964844,
+        "selector": ".finale-brand",
+        "w": 400.3999938964844,
+        "x": 25,
+        "y": 567.7000122070312
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "7",
+    "viewport": [
+      450,
+      800
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 280.375,
+        "h": 198.375,
+        "right": 300,
+        "selector": ".portal-copy",
+        "w": 280,
+        "x": 20,
+        "y": 82
+      },
+      {
+        "bottom": 443.9875183105469,
+        "h": 114,
+        "right": 217,
+        "selector": ".portal-seal",
+        "w": 114,
+        "x": 103,
+        "y": 329.9875183105469
+      },
+      {
+        "bottom": 516.0000057220459,
+        "h": 22.399999618530273,
+        "right": 300,
+        "selector": ".portal-footnote",
+        "w": 280,
+        "x": 20,
+        "y": 493.6000061035156
+      }
+    ],
+    "label": "opening",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "0",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 420,
+        "h": 170.4499969482422,
+        "right": 295,
+        "selector": ".memory-caption",
+        "w": 270,
+        "x": 25,
+        "y": 249.5500030517578
+      },
+      {
+        "bottom": 488,
+        "h": 50,
+        "right": 295,
+        "selector": ".memory-gem",
+        "w": 270,
+        "x": 25,
+        "y": 438
+      }
+    ],
+    "label": "first portrait",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 420,
+        "h": 170.4499969482422,
+        "right": 295,
+        "selector": ".memory-caption",
+        "w": 270,
+        "x": 25,
+        "y": 249.5500030517578
+      },
+      {
+        "bottom": 488,
+        "h": 50,
+        "right": 295,
+        "selector": ".memory-gem",
+        "w": 270,
+        "x": 25,
+        "y": 438
+      }
+    ],
+    "label": "long portrait caption",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 172.1500015258789,
+        "h": 95.1500015258789,
+        "right": 298,
+        "selector": ".scene-heading",
+        "w": 276,
+        "x": 22,
+        "y": 77
+      },
+      {
+        "bottom": 360.75,
+        "h": 141.6999969482422,
+        "right": 230.8499984741211,
+        "selector": "#dateRelic",
+        "w": 141.6999969482422,
+        "x": 89.1500015258789,
+        "y": 219.0500030517578
+      },
+      {
+        "bottom": 489.9999923706054,
+        "h": 82.3499984741211,
+        "right": 298,
+        "selector": ".date-after",
+        "w": 276,
+        "x": 22,
+        "y": 407.6499938964844
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 172.1500015258789,
+        "h": 95.1500015258789,
+        "right": 298,
+        "selector": ".scene-heading",
+        "w": 276,
+        "x": 22,
+        "y": 77
+      },
+      {
+        "bottom": 361.5500030517578,
+        "h": 141.6999969482422,
+        "right": 230.8499984741211,
+        "selector": "#dateRelic",
+        "w": 141.6999969482422,
+        "x": 89.1500015258789,
+        "y": 219.8500061035156
+      },
+      {
+        "bottom": 490,
+        "h": 80.75,
+        "right": 298,
+        "selector": ".date-after",
+        "w": 276,
+        "x": 22,
+        "y": 409.25
+      }
+    ],
+    "label": "date revealed",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 217.5,
+        "h": 135.5,
+        "right": 302,
+        "selector": ".celebration-heading",
+        "w": 284,
+        "x": 18,
+        "y": 82
+      },
+      {
+        "bottom": 402.636344909668,
+        "h": 89.8499984741211,
+        "right": 300,
+        "selector": "#eventRevelation",
+        "w": 280,
+        "x": 20,
+        "y": 312.7863464355469
+      },
+      {
+        "bottom": 488.4874954223633,
+        "h": 66.4000015258789,
+        "right": 300,
+        "selector": ".world-select",
+        "w": 280,
+        "x": 20,
+        "y": 422.0874938964844
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "3",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 191.4000015258789,
+        "h": 117.4000015258789,
+        "right": 300,
+        "selector": ".scene-heading",
+        "w": 280,
+        "x": 20,
+        "y": 74
+      },
+      {
+        "bottom": 402.6750183105469,
+        "h": 204.15000915527344,
+        "right": 297.6000118255615,
+        "selector": "#grandPiano",
+        "w": 275.20001220703125,
+        "x": 22.399999618530273,
+        "y": 198.52500915527344
+      },
+      {
+        "bottom": 466.2000198364258,
+        "h": 56.400001525878906,
+        "right": 286,
+        "selector": ".piano-controls",
+        "w": 252,
+        "x": 34,
+        "y": 409.8000183105469
+      },
+      {
+        "bottom": 489.0000133514404,
+        "h": 16.80000114440918,
+        "right": 300,
+        "selector": ".piano-hint",
+        "w": 280,
+        "x": 20,
+        "y": 472.2000122070313
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "4",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 176.1500015258789,
+        "h": 98.1500015258789,
+        "right": 300,
+        "selector": ".scene-heading",
+        "w": 280,
+        "x": 20,
+        "y": 78
+      },
+      {
+        "bottom": 340.7875061035156,
+        "h": 159.03750610351562,
+        "right": 300.8000068664551,
+        "selector": ".wish-tree",
+        "w": 281.6000061035156,
+        "x": 19.200000762939453,
+        "y": 181.75
+      },
+      {
+        "bottom": 456.1499938964844,
+        "h": 104,
+        "right": 284.8000068664551,
+        "selector": ".wish-form",
+        "w": 249.6000061035156,
+        "x": 35.20000076293945,
+        "y": 352.1499938964844
+      },
+      {
+        "bottom": 499.8500061035156,
+        "h": 44,
+        "right": 288,
+        "selector": ".bloom-message",
+        "w": 256,
+        "x": 32,
+        "y": 455.8500061035156
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "5",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 397.6000061035156,
+        "h": 223.5,
+        "right": 300,
+        "selector": ".promise-copy",
+        "w": 280,
+        "x": 20,
+        "y": 174.10000610351562
+      },
+      {
+        "bottom": 463.1750183105469,
+        "h": 63,
+        "right": 191.5,
+        "selector": "#writePromise",
+        "w": 63,
+        "x": 128.5,
+        "y": 400.1750183105469
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "6",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 357.6000061035156,
+        "h": 217.6000061035156,
+        "right": 295,
+        "selector": ".finale-copy",
+        "w": 270,
+        "x": 25,
+        "y": 140
+      },
+      {
+        "bottom": 490.0000076293946,
+        "h": 120.4000015258789,
+        "right": 295,
+        "selector": ".finale-brand",
+        "w": 270,
+        "x": 25,
+        "y": 369.6000061035156
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "7",
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 364.4750061035156,
+        "h": 268.4750061035156,
+        "right": 373.6000061035156,
+        "selector": ".portal-copy",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 96
+      },
+      {
+        "bottom": 640.0500030517578,
+        "h": 144.83750915527344,
+        "right": 269.21250915527344,
+        "selector": ".portal-seal",
+        "w": 144.83750915527344,
+        "x": 124.375,
+        "y": 495.2124938964844
+      },
+      {
+        "bottom": 781.9999876022339,
+        "h": 11.199999809265137,
+        "right": 373.6000061035156,
+        "selector": ".portal-footnote",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 770.7999877929688
+      }
+    ],
+    "label": "opening",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "0",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 704.0000228881836,
+        "h": 112.2249984741211,
+        "right": 368.6000061035156,
+        "selector": ".memory-caption",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 591.7750244140625
+      },
+      {
+        "bottom": 772,
+        "h": 50,
+        "right": 368.6000061035156,
+        "selector": ".memory-gem",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 722
+      }
+    ],
+    "label": "first portrait",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 704.0000457763672,
+        "h": 160.40000915527344,
+        "right": 368.6000061035156,
+        "selector": ".memory-caption",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 543.6000366210938
+      },
+      {
+        "bottom": 772,
+        "h": 50,
+        "right": 368.6000061035156,
+        "selector": ".memory-gem",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 722
+      }
+    ],
+    "label": "long portrait caption",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 229.9750061035156,
+        "h": 139.97500610351562,
+        "right": 371.6000061035156,
+        "selector": ".scene-heading",
+        "w": 349.6000061035156,
+        "x": 22,
+        "y": 90
+      },
+      {
+        "bottom": 569.5750274658203,
+        "h": 255.83750915527344,
+        "right": 324.71250915527344,
+        "selector": "#dateRelic",
+        "w": 255.83750915527344,
+        "x": 68.875,
+        "y": 313.7375183105469
+      },
+      {
+        "bottom": 756.0000381469727,
+        "h": 102.6500015258789,
+        "right": 371.6000061035156,
+        "selector": ".date-after",
+        "w": 349.6000061035156,
+        "x": 22,
+        "y": 653.3500366210938
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 229.9750061035156,
+        "h": 139.97500610351562,
+        "right": 371.6000061035156,
+        "selector": ".scene-heading",
+        "w": 349.6000061035156,
+        "x": 22,
+        "y": 90
+      },
+      {
+        "bottom": 568.7750091552734,
+        "h": 255.83750915527344,
+        "right": 324.71250915527344,
+        "selector": "#dateRelic",
+        "w": 255.83750915527344,
+        "x": 68.875,
+        "y": 312.9375
+      },
+      {
+        "bottom": 756,
+        "h": 104.25,
+        "right": 371.6000061035156,
+        "selector": ".date-after",
+        "w": 349.6000061035156,
+        "x": 22,
+        "y": 651.75
+      }
+    ],
+    "label": "date revealed",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 289.90000915527344,
+        "h": 162.10000610351562,
+        "right": 375.6000061035156,
+        "selector": ".celebration-heading",
+        "w": 357.6000061035156,
+        "x": 18,
+        "y": 127.8000030517578
+      },
+      {
+        "bottom": 589.952995300293,
+        "h": 103.8499984741211,
+        "right": 373.6000061035156,
+        "selector": "#eventRevelation",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 486.1029968261719
+      },
+      {
+        "bottom": 724.2000122070312,
+        "h": 78,
+        "right": 368.6000061035156,
+        "selector": ".world-select",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 646.2000122070312
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "3",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 248.27500915527344,
+        "h": 160.27500915527344,
+        "right": 373.6000061035156,
+        "selector": ".scene-heading",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 88
+      },
+      {
+        "bottom": 601.0375061035156,
+        "h": 290.01251220703125,
+        "right": 366.03751945495605,
+        "selector": "#grandPiano",
+        "w": 338.4875183105469,
+        "x": 27.55000114440918,
+        "y": 311.0249938964844
+      },
+      {
+        "bottom": 725.7999877929688,
+        "h": 62,
+        "right": 355.9125175476074,
+        "selector": ".piano-controls",
+        "w": 318.2375183105469,
+        "x": 37.67499923706055,
+        "y": 663.7999877929688
+      },
+      {
+        "bottom": 756.9999885559082,
+        "h": 19.200000762939453,
+        "right": 373.6000061035156,
+        "selector": ".piano-hint",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 737.7999877929688
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "4",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 238.1999969482422,
+        "h": 146.1999969482422,
+        "right": 373.6000061035156,
+        "selector": ".scene-heading",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 92
+      },
+      {
+        "bottom": 511.18751525878906,
+        "h": 238.5500030517578,
+        "right": 369.9812679290771,
+        "selector": ".wish-tree",
+        "w": 346.3625183105469,
+        "x": 23.618749618530273,
+        "y": 272.63751220703125
+      },
+      {
+        "bottom": 664.5500030517578,
+        "h": 127.8000030517578,
+        "right": 350.31249618530273,
+        "selector": ".wish-form",
+        "w": 307.0249938964844,
+        "x": 43.28750228881836,
+        "y": 536.75
+      },
+      {
+        "bottom": 749.7624893188477,
+        "h": 51.837501525878906,
+        "right": 354.24999618530273,
+        "selector": ".bloom-message",
+        "w": 314.8999938964844,
+        "x": 39.35000228881836,
+        "y": 697.9249877929688
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "5",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 604.9250030517578,
+        "h": 244.40000915527344,
+        "right": 373.6000061035156,
+        "selector": ".promise-copy",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 360.5249938964844
+      },
+      {
+        "bottom": 694.5375366210938,
+        "h": 77,
+        "right": 235.3000030517578,
+        "selector": "#writePromise",
+        "w": 77,
+        "x": 158.3000030517578,
+        "y": 617.5375366210938
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "6",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 603.7000122070312,
+        "h": 308.1000061035156,
+        "right": 368.6000061035156,
+        "selector": ".finale-copy",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 295.6000061035156
+      },
+      {
+        "bottom": 754.0000152587891,
+        "h": 134.3000030517578,
+        "right": 368.6000061035156,
+        "selector": ".finale-brand",
+        "w": 343.6000061035156,
+        "x": 25,
+        "y": 619.7000122070312
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "7",
+    "viewport": [
+      394,
+      852
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 307.3500061035156,
+        "h": 209.8500061035156,
+        "right": 472.63750076293945,
+        "selector": ".portal-copy",
+        "w": 430.4375,
+        "x": 42.20000076293945,
+        "y": 97.5
+      },
+      {
+        "bottom": 250.40000915527344,
+        "h": 103,
+        "right": 684.5,
+        "selector": ".portal-seal",
+        "w": 103,
+        "x": 581.5,
+        "y": 147.40000915527344
+      },
+      {
+        "bottom": 353.8000183105469,
+        "h": 10,
+        "right": 824,
+        "selector": ".portal-footnote",
+        "w": 804,
+        "x": 20,
+        "y": 343.8000183105469
+      }
+    ],
+    "label": "opening",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "0",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 284.7000045776367,
+        "h": 99.20000457763672,
+        "right": 810.25,
+        "selector": ".memory-caption",
+        "w": 388.25,
+        "x": 422,
+        "y": 185.5
+      },
+      {
+        "bottom": 152.52000427246094,
+        "h": 87.04000091552734,
+        "right": 758.208740234375,
+        "selector": ".memory-gem",
+        "w": 78.72998046875,
+        "x": 679.478759765625,
+        "y": 65.4800033569336
+      }
+    ],
+    "label": "first portrait",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 284.7000045776367,
+        "h": 99.20000457763672,
+        "right": 810.25,
+        "selector": ".memory-caption",
+        "w": 388.25,
+        "x": 422,
+        "y": 185.5
+      },
+      {
+        "bottom": 152.52000427246094,
+        "h": 87.04000091552734,
+        "right": 758.208740234375,
+        "selector": ".memory-gem",
+        "w": 78.72998046875,
+        "x": 679.478759765625,
+        "y": 65.4800033569336
+      }
+    ],
+    "label": "long portrait caption",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 208.3000030517578,
+        "h": 110.8000030517578,
+        "right": 379.7874946594238,
+        "selector": ".scene-heading",
+        "w": 320.7124938964844,
+        "x": 59.07500076293945,
+        "y": 97.5
+      },
+      {
+        "bottom": 263,
+        "h": 175,
+        "right": 712.0499877929688,
+        "selector": "#dateRelic",
+        "w": 175,
+        "x": 537.0499877929688,
+        "y": 88
+      },
+      {
+        "bottom": 308.1000003814697,
+        "h": 15.600000381469728,
+        "right": 801.8000183105469,
+        "selector": ".date-after",
+        "w": 337.6000061035156,
+        "x": 464.2000122070313,
+        "y": 292.5
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 208.3000030517578,
+        "h": 110.8000030517578,
+        "right": 379.7874946594238,
+        "selector": ".scene-heading",
+        "w": 320.7124938964844,
+        "x": 59.07500076293945,
+        "y": 97.5
+      },
+      {
+        "bottom": 263,
+        "h": 175,
+        "right": 712.0499877929688,
+        "selector": "#dateRelic",
+        "w": 175,
+        "x": 537.0499877929688,
+        "y": 88
+      },
+      {
+        "bottom": 308.1000003814697,
+        "h": 15.600000381469728,
+        "right": 801.8000183105469,
+        "selector": ".date-after",
+        "w": 337.6000061035156,
+        "x": 464.2000122070313,
+        "y": 292.5
+      }
+    ],
+    "label": "date revealed",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 214.90000915527344,
+        "h": 125.20000457763672,
+        "right": 455.7500190734863,
+        "selector": ".celebration-heading",
+        "w": 405.1125183105469,
+        "x": 50.63750076293945,
+        "y": 89.70000457763672
+      },
+      {
+        "bottom": 284.8741226196289,
+        "h": 81.6500015258789,
+        "right": 818.6875305175781,
+        "selector": "#eventRevelation",
+        "w": 329.1750183105469,
+        "x": 489.5125122070313,
+        "y": 203.22412109375
+      },
+      {
+        "bottom": 319.8000183105469,
+        "h": 57,
+        "right": 405.1125068664551,
+        "selector": ".world-select",
+        "w": 354.4750061035156,
+        "x": 50.63750076293945,
+        "y": 262.8000183105469
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "3",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 229.8000030517578,
+        "h": 144,
+        "right": 354.4749946594238,
+        "selector": ".scene-heading",
+        "w": 303.8374938964844,
+        "x": 50.63750076293945,
+        "y": 85.80000305175781
+      },
+      {
+        "bottom": 269.0999984741211,
+        "h": 180,
+        "right": 757.6750183105469,
+        "selector": "#grandPiano",
+        "w": 300,
+        "x": 457.6750183105469,
+        "y": 89.0999984741211
+      },
+      {
+        "bottom": 327.60001373291016,
+        "h": 56.400001525878906,
+        "right": 784.9250183105469,
+        "selector": ".piano-controls",
+        "w": 354.4875183105469,
+        "x": 430.4375,
+        "y": 271.20001220703125
+      },
+      {
+        "bottom": 288.6000003814697,
+        "h": 17.600000381469727,
+        "right": 362.9124946594238,
+        "selector": ".piano-hint",
+        "w": 320.7124938964844,
+        "x": 42.20000076293945,
+        "y": 271
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "4",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 269.1000061035156,
+        "h": 185.8000030517578,
+        "right": 810.2500305175781,
+        "selector": ".promise-copy",
+        "w": 405.1375122070313,
+        "x": 405.1125183105469,
+        "y": 83.30000305175781
+      },
+      {
+        "bottom": 329.6000061035156,
+        "h": 43,
+        "right": 637.6124877929688,
+        "selector": "#writePromise",
+        "w": 43,
+        "x": 594.6124877929688,
+        "y": 286.6000061035156
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "6",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 257.375,
+        "h": 167.9499969482422,
+        "right": 819.0000305175781,
+        "selector": ".finale-copy",
+        "w": 418.7000122070313,
+        "x": 400.3000183105469,
+        "y": 89.42500305175781
+      },
+      {
+        "bottom": 368.0000228881836,
+        "h": 83.20000457763672,
+        "right": 819.0000305175781,
+        "selector": ".finale-brand",
+        "w": 418.7000122070313,
+        "x": 400.3000183105469,
+        "y": 284.8000183105469
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "7",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 489.6125183105469,
+        "h": 363.6125183105469,
+        "right": 1420,
+        "selector": ".portal-copy",
+        "w": 1400,
+        "x": 20,
+        "y": 126
+      },
+      {
+        "bottom": 682,
+        "h": 140,
+        "right": 790,
+        "selector": ".portal-seal",
+        "w": 140,
+        "x": 650,
+        "y": 542
+      },
+      {
+        "bottom": 813,
+        "h": 12,
+        "right": 1420,
+        "selector": ".portal-footnote",
+        "w": 1400,
+        "x": 20,
+        "y": 801
+      }
+    ],
+    "label": "opening",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 765.0000305175781,
+        "h": 153.10000610351562,
+        "right": 1420,
+        "selector": ".memory-caption",
+        "w": 1400,
+        "x": 20,
+        "y": 611.9000244140625
+      },
+      {
+        "bottom": 378.8000030517578,
+        "h": 108.8000030517578,
+        "right": 1209.599998474121,
+        "selector": ".memory-gem",
+        "w": 98.4124984741211,
+        "x": 1111.1875,
+        "y": 270
+      }
+    ],
+    "label": "first portrait",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 765.0000305175781,
+        "h": 153.10000610351562,
+        "right": 1420,
+        "selector": ".memory-caption",
+        "w": 1400,
+        "x": 20,
+        "y": 611.9000244140625
+      },
+      {
+        "bottom": 378.8000030517578,
+        "h": 108.8000030517578,
+        "right": 1209.599998474121,
+        "selector": ".memory-gem",
+        "w": 98.4124984741211,
+        "x": 1111.1875,
+        "y": 270
+      }
+    ],
+    "label": "long portrait caption",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 554,
+        "h": 220,
+        "right": 659.5125045776367,
+        "selector": ".scene-heading",
+        "w": 544.3125,
+        "x": 115.20000457763672,
+        "y": 334
+      },
+      {
+        "bottom": 540.5500030517578,
+        "h": 324,
+        "right": 1197.3500366210938,
+        "selector": "#dateRelic",
+        "w": 324,
+        "x": 873.3500366210938,
+        "y": 216.5500030517578
+      },
+      {
+        "bottom": 788.0000381469727,
+        "h": 110.9000015258789,
+        "right": 1324.800048828125,
+        "selector": ".date-after",
+        "w": 578.8875122070312,
+        "x": 745.9125366210938,
+        "y": 677.1000366210938
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 554,
+        "h": 220,
+        "right": 659.5125045776367,
+        "selector": ".scene-heading",
+        "w": 544.3125,
+        "x": 115.20000457763672,
+        "y": 334
+      },
+      {
+        "bottom": 539.75,
+        "h": 324,
+        "right": 1197.3500366210938,
+        "selector": "#dateRelic",
+        "w": 324,
+        "x": 873.3500366210938,
+        "y": 215.75
+      },
+      {
+        "bottom": 788,
+        "h": 112.5,
+        "right": 1324.800048828125,
+        "selector": ".date-after",
+        "w": 578.8875122070312,
+        "x": 745.9125366210938,
+        "y": 675.5
+      }
+    ],
+    "label": "date revealed",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 474,
+        "h": 258,
+        "right": 791.9999923706055,
+        "selector": ".celebration-heading",
+        "w": 676.7999877929688,
+        "x": 115.20000457763672,
+        "y": 216
+      },
+      {
+        "bottom": 653.2740097045898,
+        "h": 103.8499984741211,
+        "right": 1324.7999877929688,
+        "selector": "#eventRevelation",
+        "w": 532.7999877929688,
+        "x": 792,
+        "y": 549.4240112304688
+      },
+      {
+        "bottom": 693.0000152587891,
+        "h": 96.8000030517578,
+        "right": 719.9999923706055,
+        "selector": ".world-select",
+        "w": 604.7999877929688,
+        "x": 115.20000457763672,
+        "y": 596.2000122070312
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 482.3999938964844,
+        "h": 266.3999938964844,
+        "right": 604.8000030517578,
+        "selector": ".scene-heading",
+        "w": 504,
+        "x": 100.8000030517578,
+        "y": 216
+      },
+      {
+        "bottom": 639,
+        "h": 528,
+        "right": 1294.2000122070312,
+        "selector": "#grandPiano",
+        "w": 630,
+        "x": 664.2000122070312,
+        "y": 111
+      },
+      {
+        "bottom": 729,
+        "h": 69,
+        "right": 1236.4000244140625,
+        "selector": ".piano-controls",
+        "w": 500,
+        "x": 736.4000244140625,
+        "y": 660
+      },
+      {
+        "bottom": 648,
+        "h": 24,
+        "right": 619.1999893188477,
+        "selector": ".piano-hint",
+        "w": 532.7999877929688,
+        "x": 86.4000015258789,
+        "y": 624
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "4",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 397.1999969482422,
+        "h": 199.1999969482422,
+        "right": 676.8000030517578,
+        "selector": ".scene-heading",
+        "w": 576,
+        "x": 100.8000030517578,
+        "y": 198
+      },
+      {
+        "bottom": 648,
+        "h": 468,
+        "right": 1332,
+        "selector": ".wish-tree",
+        "w": 648,
+        "x": 684,
+        "y": 180
+      },
+      {
+        "bottom": 631.8000030517578,
+        "h": 127.8000030517578,
+        "right": 595.2000045776367,
+        "selector": ".wish-form",
+        "w": 480,
+        "x": 115.20000457763672,
+        "y": 504
+      },
+      {
+        "bottom": 738.0000114440918,
+        "h": 60.79999923706055,
+        "right": 1296,
+        "selector": ".bloom-message",
+        "w": 547.2000122070312,
+        "x": 748.7999877929688,
+        "y": 677.2000122070312
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "5",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 549,
+        "h": 314.625,
+        "right": 1353.6000366210938,
+        "selector": ".promise-copy",
+        "w": 648,
+        "x": 705.6000366210938,
+        "y": 234.375
+      },
+      {
+        "bottom": 713.5,
+        "h": 77,
+        "right": 1060.9000244140625,
+        "selector": "#writePromise",
+        "w": 77,
+        "x": 983.9000244140624,
+        "y": 636.5
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "6",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 598.8000183105469,
+        "h": 418.8000183105469,
+        "right": 1368.0000610351562,
+        "selector": ".finale-copy",
+        "w": 633.6000366210938,
+        "x": 734.4000244140625,
+        "y": 180
+      },
+      {
+        "bottom": 738.0000152587891,
+        "h": 139.3000030517578,
+        "right": 1368.0000610351562,
+        "selector": ".finale-brand",
+        "w": 633.6000366210938,
+        "x": 734.4000244140625,
+        "y": 598.7000122070312
+      }
+    ],
+    "label": "scene default",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "7",
+    "viewport": [
+      1440,
+      900
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 204.4000015258789,
+        "h": 110.8000030517578,
+        "right": 379.7874946594238,
+        "selector": ".scene-heading",
+        "w": 329.1499938964844,
+        "x": 50.63750076293945,
+        "y": 93.5999984741211
+      },
+      {
+        "bottom": 257.4000015258789,
+        "h": 195,
+        "right": 810.2312622070312,
+        "selector": ".wish-tree",
+        "w": 388.2375183105469,
+        "x": 421.9937438964844,
+        "y": 62.400001525878906
+      },
+      {
+        "bottom": 303.40000915527344,
+        "h": 92.8000030517578,
+        "right": 362.9124946594238,
+        "selector": ".wish-form",
+        "w": 303.8374938964844,
+        "x": 59.07500076293945,
+        "y": 210.6000061035156
+      },
+      {
+        "bottom": 319.79999923706055,
+        "h": 50.54999923706055,
+        "right": 801.8000183105469,
+        "selector": ".bloom-message",
+        "w": 362.9250183105469,
+        "x": 438.875,
+        "y": 269.25
+      }
+    ],
+    "label": "landscape garden corrected",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "5",
+    "viewport": [
+      844,
+      390
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 161.75,
+        "h": 85.75,
+        "right": 373.6000061035156,
+        "selector": ".scene-heading",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 76
+      },
+      {
+        "bottom": 275.5999984741211,
+        "h": 105.8499984741211,
+        "right": 350.29999923706055,
+        "selector": ".wish-tree",
+        "w": 307,
+        "x": 43.29999923706055,
+        "y": 169.75
+      },
+      {
+        "bottom": 372.40000915527344,
+        "h": 88.80000305175781,
+        "right": 347.0750198364258,
+        "selector": ".wish-form",
+        "w": 300.5500183105469,
+        "x": 46.525001525878906,
+        "y": 283.6000061035156
+      },
+      {
+        "bottom": 421.99999618530273,
+        "h": 41.60000228881836,
+        "right": 373.6000061035156,
+        "selector": ".bloom-message",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 380.3999938964844
+      }
+    ],
+    "label": "reduced-height garden corrected",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "5",
+    "viewport": [
+      394,
+      500
+    ],
+    "visibleScenes": 1
+  },
+  {
+    "boxes": [
+      {
+        "bottom": 161.75,
+        "h": 85.75,
+        "right": 373.6000061035156,
+        "selector": ".scene-heading",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 76
+      },
+      {
+        "bottom": 275.5999984741211,
+        "h": 105.8499984741211,
+        "right": 350.29999923706055,
+        "selector": ".wish-tree",
+        "w": 307,
+        "x": 43.29999923706055,
+        "y": 169.75
+      },
+      {
+        "bottom": 372.40000915527344,
+        "h": 88.80000305175781,
+        "right": 347.0750198364258,
+        "selector": ".wish-form",
+        "w": 300.5500183105469,
+        "x": 46.525001525878906,
+        "y": 283.6000061035156
+      },
+      {
+        "bottom": 422.4248237609863,
+        "h": 41.60002517700195,
+        "right": 373.6000061035156,
+        "selector": ".bloom-message",
+        "w": 353.6000061035156,
+        "x": 20,
+        "y": 380.8247985839844
+      }
+    ],
+    "label": "reduced-height post-submit corrected",
+    "offscreen": [],
+    "offset": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "scene": "5",
+    "viewport": [
+      394,
+      500
+    ],
+    "visibleScenes": 1
+  }
+]

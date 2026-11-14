@@ -17,16 +17,18 @@ There is one manually controlled journey with no scrolling or mode selector. Web
 
 ## Eight connected scenes
 
-1. **The impossible opening.** Thousands of gold fragments assemble a fluted palace arch around folded, shader-animated velvet. Touch the gyroscope seal to release the curtain and begin the score.
-2. **The art of us.** All eight original portraits appear intact on a floating, gold-framed surface with subtle depth movement and a dark extended photographic field. Touch the memory gem to explore.
-3. **A secret in the stars.** Scratch actual foil from a canvas inside a revolving 3D astrolabe. GPU gold dust follows the gesture; coverage triggers the astronomical reveal. An accessible one-touch alternative is included.
-4. **Three worlds, one forever.** A refractive lantern, sculpted rose and crystal compass introduce three environments. Each object reveals its own celebration, date, time and venue. Water shimmer and organic filament transitions connect the worlds.
-5. **The royal piano.** A beveled physical instrument surrounds thirteen live keys. Five detuned partials, natural decay, compression and convolution reverb accompany sound-reactive ribbons, butterflies and lighting. Play a tune, glissando or the original short melody.
+1. **The impossible opening.** Thousands of gold fragments assemble a fluted palace arch around woven, shader-animated velvet. Touch the gyroscope seal to release the curtain and begin the score. The seal dissolves, fine light follows the parting edges, and architectural gold stays on the arch. The 1.5-second wall-clock opening and matching cloth shadows remain coherent after a delayed first frame. An early tap waits for GPU assets without losing the gesture.
+2. **The art of us.** All eight original portraits appear intact on a floating, gold-framed surface with subtle depth movement and a dark extended photographic field. A memory control beneath the portrait keeps both faces clear. Photographs dissolve continuously; rapid taps snapshot the current mixture into alternating native-source-size HDR targets. Gold follows the frame rather than accumulating in a corner.
+3. **A secret in the stars.** Scratch engraved foil inside a revolving 3D astrolabe. GPU gold dust follows the gesture; 11,500 particles orbit the inscription when the date emerges. Brush paths retain smooth edges across resizing, and leaving the scene releases the gesture. An accessible one-touch alternative is included.
+4. **Three worlds, one forever.** A refractive lantern, sculpted rose and crystal compass introduce three environments. Each object reveals its own celebration, date, time and venue. Wedding petals cascade across the world; title entrances, water shimmer and directional silk-like transitions connect the acts. Repeated taps do not stack disclosures or bursts.
+5. **The royal piano.** A beveled ebony instrument surrounds thirteen live keys. Five detuned partials, natural decay, compression and convolution reverb accompany sound-reactive ribbons, rising musical notes and lighting. Play a tune, glissando or the original short melody. The instrument uses an explicit environment reflection intensity so its gold strings remain visible.
 6. **The wish garden.** Physical branches, leaves and sculpted flowers respond to a blessing with a cascading bloom. Touch the seed for an immediate wish or write your own. Up to seven wishes are saved only in this browser; nothing is transmitted or represented as a shared guestbook.
 7. **The timeless promise.** Holding the seal traces a heart in light around the couple. Tap or Enter also completes the promise; cancellation and navigation clear pending holds.
-8. **Into forever.** Ignite a 36,000-particle sky sequence, leave the final constellation glowing, share the invitation or replay. Invite Wonderland's Instagram credit and conversion link remain part of the ending.
+8. **Into forever.** Ignite a 36,000-particle overhead sky sequence around a golden infinity constellation, distinct from the promise's heart. Closing words and the brand remain below the light paths. Share the invitation or replay; Invite Wonderland's Instagram credit and conversion link remain part of the ending.
 
 Scene changes retire outgoing content immediately and cancel interrupted animations. Environment dissolves preserve the currently rendered blend. Text has stable, separate composition areas with continuous cinematic contrast grading.
+
+Version 2.3 removes the expanding radial transition flash, oversized opening seam, stale curtain shadows, atmospheric-beam shadows, concentrated reveal flashes and blurred patches behind copy. Lighting, materials, formations and composition were art-directed while retaining the full particle counts, source images and rendering quality settings. See the current visual and performance evidence below.
 
 Bottom chapter markers, next/back, background swipes and Left/Right keys navigate. Piano, scratch and form gestures do not trigger navigation swipes. The fullscreen icon requests native fullscreen where supported.
 
@@ -64,6 +66,8 @@ Use Node 20 or newer. The browser bundle includes Three.js and postprocessing; i
 | `src/infinity/batching.mjs`, `static-geometry.mjs` | Preserve geometry and transforms while reducing draw submissions |
 | `src/infinity/particle-ledger.mjs` | Conservative live spans in the full-capacity particle ring |
 | `src/infinity/film-output.mjs` | Fused film, bloom addition, ACES and sRGB screen output |
+| `src/infinity/choreography.mjs` | Bounded opening timing and distinct full-count particle formations |
+| `src/infinity/fidelity-audit.mjs` | Opt-in GPU comparison with the original postprocessing chain |
 | `src/infinity/profiler.mjs` | Opt-in asynchronous GPU and CPU measurements |
 | `js/infinity.bundle.js` | Self-hosted production IIFE generated by esbuild |
 | `js/particle-random.worker.js` | Off-thread particle preparation; include this file when hosting |
@@ -73,16 +77,17 @@ Use Node 20 or newer. The browser bundle includes Three.js and postprocessing; i
 | `js/scratch.js` | Foil erasure, geometric coverage and resizing |
 | `index.html`, `styles.css`, `infinity.css`, `polish.css` | Accessible touch stage and responsive art direction |
 | `tests/` | Interaction/audio integration and real Three.js geometry tests |
-| `qa/performance/` | Current measurements, screenshots and performance verification |
+| `qa/art-direction/` | Current visual audit, compositor comparison, screenshots and matched performance data |
+| `qa/performance/` | Historical engine-optimization measurements and verification |
 | `qa/polish/`, `qa/portrait-entry/` | Earlier layout, lifecycle and portrait-entry verification |
 
 Change the illustrative date in `index.html` and `CONFIG.date` in `js/app.js`. Celebration data lives in `acts` in the same file. GPU media paths must match the HTML/app media paths.
 
 ## Recording and verification
 
-[RECORDING.md](RECORDING.md) contains a 22-second shot list for this same experience. [qa/performance/VERIFICATION.md](qa/performance/VERIFICATION.md) records current before/after GPU timings, interaction checks and their limits. Responsive browser testing does not replace an internal-audio screen recording on the specific phone. No website can guarantee Instagram reach or engagement.
+[RECORDING.md](RECORDING.md) contains a 22-second shot list for this same experience. [qa/art-direction/VERIFICATION.md](qa/art-direction/VERIFICATION.md) records the current visual audit, original/optimized compositor comparison, matched performance timings and their limits. Responsive browser testing does not replace an internal-audio screen recording on the specific phone. No website can guarantee Instagram reach or engagement.
 
-For local profiling, append `?profile=1`. After 30 warm-up frames and at least 180 measured frames, `#world` exposes JSON in `data-profile` and marks `data-profile-ready="true"`. Navigate to measure each scene separately. `?profile=shadow` isolates shadow rendering. GPU timing requires `EXT_disjoint_timer_query_webgl2`; unsupported browsers still report CPU/frame data. Profiling is off on the normal invitation, adds no visible mode selector and sends no telemetry. For particle-emission CPU comparisons, run `node scripts/benchmark-emission.mjs` in this Git checkout.
+For local profiling, append `?profile=1`. After 30 warm-up frames and at least 180 measured frames, `#world` exposes JSON in `data-profile` and marks `data-profile-ready="true"`. `data-profile-stable="true"` additionally requires eight seconds since scene entry; use it for settled comparisons. Navigate to measure each scene separately. `?profile=shadow` isolates shadow rendering. GPU timing requires `EXT_disjoint_timer_query_webgl2`; unsupported browsers still report CPU/frame data. Append `?audit=1` for the isolated compositor calibration in `data-fidelity-audit` and lighting checks in `data-material-audit`. These diagnostics are off on the normal invitation, add no visible mode selector and send no telemetry. For particle-emission CPU comparisons, run `node scripts/benchmark-emission.mjs` in this Git checkout.
 
 ## GitHub Pages
 

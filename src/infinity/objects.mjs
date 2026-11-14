@@ -6,8 +6,9 @@ export function materials(){
   return {
     gold:new T.MeshPhysicalMaterial({color:0xd7b372,metalness:1,roughness:.19,clearcoat:1,clearcoatRoughness:.12,envMapIntensity:.65}),
     dark:new T.MeshPhysicalMaterial({color:0x041a20,metalness:.42,roughness:.32,clearcoat:.45,clearcoatRoughness:.24,envMapIntensity:.18}),
+    ebony:new T.MeshPhysicalMaterial({color:0x051f29,metalness:.24,roughness:.27,clearcoat:.8,clearcoatRoughness:.14,envMapIntensity:.035,specularIntensity:.65}),
     ivory:new T.MeshPhysicalMaterial({color:0xf4e2cb,metalness:.08,roughness:.48,clearcoat:.35,envMapIntensity:.4,transmission:.08,thickness:.08,side:T.DoubleSide}),
-    leaf:new T.MeshPhysicalMaterial({color:0x658b68,metalness:.72,roughness:.28,clearcoat:.6,side:T.DoubleSide}),
+    leaf:new T.MeshPhysicalMaterial({color:0x658b68,metalness:.32,roughness:.34,clearcoat:.6,side:T.DoubleSide}),
     light:new T.MeshBasicMaterial({color:new T.Color(4.5,2.5,.75)}),
     glass:new T.MeshPhysicalMaterial({color:0xffedca,metalness:0,roughness:.045,transmission:.88,thickness:.28,ior:1.45,clearcoat:1,envMapIntensity:1.3})
   };
@@ -23,8 +24,7 @@ export function palace(m){
     mesh(new T.CylinderGeometry(.17,.22,8.2,32),m.dark,column);
     for(let i=0;i<12;i++){const a=i*Math.PI/6;mesh(new T.CylinderGeometry(.018,.018,8.1,8),m.gold,column,Math.cos(a)*.225,0,Math.sin(a)*.225);}
     for(const y of [-4.1,-3.98,3.97,4.1])mesh(new T.CylinderGeometry(.32,.32,.11,32),m.gold,column,0,y,0);
-    const arch=torus(arches,m.gold,2.72,.035,0,2.5,-.55,Math.PI);arch.rotation.z=0;
-    torus(arches,m.gold,2.5,.012,0,2.5,-.5,Math.PI);
+    if(side===-1){torus(arches,m.gold,2.72,.035,0,2.5,-.55,Math.PI);torus(arches,m.gold,2.5,.012,0,2.5,-.5,Math.PI);}
   }
   mergeRigidMeshes(arches);
   const count=3600,geometry=new T.BoxGeometry(.8,.8,.8),material=m.gold.clone();
@@ -38,23 +38,37 @@ export function palace(m){
   }
   geometry.setAttribute('aScatter',new T.InstancedBufferAttribute(scatter,3));
   const uniforms={uAssemble:{value:0},uOpen:{value:0},uTime:{value:0}};
-  material.onBeforeCompile=shader=>{Object.assign(shader.uniforms,uniforms);shader.vertexShader='attribute vec3 aScatter;uniform float uAssemble,uOpen,uTime;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\ntransformed += aScatter * (1.0-uAssemble+uOpen*.7);transformed += sin(aScatter+uTime)*uOpen*.8;');};
+  material.onBeforeCompile=shader=>{Object.assign(shader.uniforms,uniforms);shader.vertexShader='attribute vec3 aScatter;uniform float uAssemble,uOpen,uTime;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\ntransformed += aScatter * (1.0-uAssemble);transformed += sin(aScatter+uTime*.35)*uOpen*.05;');};
   fragments.frustumCulled=false;group.add(fragments);
   const curtains=[];
   for(const direction of [-1,1]){
-    const geo=new T.PlaneGeometry(2.7,15.2,48,80),mat=new T.MeshPhysicalMaterial({color:0x041b27,metalness:.06,roughness:.68,sheen:.8,sheenColor:new T.Color(0x518779),sheenRoughness:.6,envMapIntensity:.45,side:T.DoubleSide});
+    const geo=new T.PlaneGeometry(2.7,15.2,48,80),mat=new T.MeshPhysicalMaterial({color:0x082730,metalness:.06,roughness:.68,sheen:.8,sheenColor:new T.Color(0x518779),sheenRoughness:.6,envMapIntensity:.45,side:T.DoubleSide});
     const state={uTime:{value:0},uOpen:{value:0},uDirection:{value:direction}};
-    mat.onBeforeCompile=shader=>{Object.assign(shader.uniforms,state);shader.vertexShader='uniform float uTime,uOpen,uDirection;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>',`#include <begin_vertex>
+    mat.onBeforeCompile=shader=>{Object.assign(shader.uniforms,state);shader.vertexShader='varying vec2 vVelvetUv;uniform float uTime,uOpen,uDirection;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>',`#include <begin_vertex>
+      vVelvetUv=uv;
       float fold=sin(position.x*19.+uTime*.12)*.07+sin(position.x*37.)*.025;
       transformed.z+=fold+(sin(position.y*.8+uTime*2.5+position.x)*.15)*uOpen;
       transformed.x+=uDirection*uOpen*(4.5+sin(position.y*.3)*.6);
       transformed.y+=uOpen*sin(position.x*2.+uTime)*.12;`);
       shader.vertexShader=shader.vertexShader.replace('#include <beginnormal_vertex>',`#include <beginnormal_vertex>\nobjectNormal=normalize(vec3(-cos(position.x*19.+uTime*.12)*.45,0.,1.));`);
+      shader.fragmentShader='varying vec2 vVelvetUv;\n'+shader.fragmentShader;
+      shader.fragmentShader=shader.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\nfloat weave=sin(vVelvetUv.x*1800.)*sin(vVelvetUv.y*1300.);diffuseColor.rgb*=.985+weave*.015;');
     };
-    const curtain=mesh(geo,mat,group,direction*1.355,0,-.7);curtains.push({mesh:curtain,uniforms:state});
+    const curtain=mesh(geo,mat,group,direction*1.355,0,-.7);
+    // The shadow pass must deform the same cloth, rather than leaving a closed curtain's shadow behind.
+    const depth=new T.MeshDepthMaterial({depthPacking:T.RGBADepthPacking,side:T.DoubleSide});
+    depth.onBeforeCompile=shader=>{Object.assign(shader.uniforms,state);shader.vertexShader='uniform float uTime,uOpen,uDirection;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>',`#include <begin_vertex>
+      float fold=sin(position.x*19.+uTime*.12)*.07+sin(position.x*37.)*.025;
+      transformed.z+=fold+(sin(position.y*.8+uTime*2.5+position.x)*.15)*uOpen;
+      transformed.x+=uDirection*uOpen*(4.5+sin(position.y*.3)*.6);
+      transformed.y+=uOpen*sin(position.x*2.+uTime)*.12;`);};
+    curtain.customDepthMaterial=depth;curtains.push({mesh:curtain,uniforms:state});
   }
-  const seam=mesh(new T.PlaneGeometry(.014,13.5),m.light.clone(),group,0,0,-.55);seam.material.transparent=true;seam.material.depthWrite=false;
-  return {group,arches,fragments,uniforms,curtains,seam};
+  const seams=[-1,1].map(direction=>{
+    const edge=mesh(new T.PlaneGeometry(.014,13.5,1,80),m.light.clone(),group,0,0,-.55);edge.material.transparent=true;edge.material.depthWrite=false;edge.material.opacity=.5;edge.castShadow=false;
+    edge.material.onBeforeCompile=shader=>{shader.uniforms.uOpen=uniforms.uOpen;shader.uniforms.uDirection={value:direction};shader.vertexShader='uniform float uOpen,uDirection;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\ntransformed.x+=uDirection*uOpen*(4.5+sin(position.y*.3)*.6);');};return edge;
+  });
+  return {group,arches,fragments,uniforms,curtains,seam:seams[0],seams};
 }
 
 export function astrolabe(m){
@@ -106,7 +120,7 @@ export function compass(m){
 }
 export function grandPiano(m){
   const group=new T.Group(),shape=new T.Shape();shape.moveTo(-2.55,-1.4);shape.lineTo(-2.53,.15);shape.bezierCurveTo(-2.53,1.1,-1.8,1.65,-.7,1.4);shape.bezierCurveTo(.05,1.25,.25,.6,1.05,.72);shape.bezierCurveTo(2.,.85,2.65,.3,2.55,-.6);shape.lineTo(2.55,-1.4);shape.closePath();
-  const body=mesh(new T.ExtrudeGeometry(shape,{depth:.15,bevelEnabled:true,bevelSize:.035,bevelThickness:.04,bevelSegments:4,curveSegments:40}),m.dark,group);
+  const body=mesh(new T.ExtrudeGeometry(shape,{depth:.15,bevelEnabled:true,bevelSize:.035,bevelThickness:.04,bevelSegments:4,curveSegments:40}),m.ebony,group);
   const linePoints=shape.getPoints(200).map(p=>new T.Vector3(p.x,p.y,.23));linePoints.push(linePoints[0].clone());tube(group,m.gold,linePoints.map(p=>p.toArray()),.026);
   const strings=[];
   for(let i=0;i<27;i++){const x=-2.18+i*.165,y=.9-.7*(i/26);const line=tube(group,m.gold,[[x,-1.2,.23],[x+.08,-.25,.23],[x+.14,y,.23]],.004);strings.push(line);}

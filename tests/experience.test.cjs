@@ -128,7 +128,7 @@ test('leaving a held promise cancels pending completion, even if its old frame a
 
 
 test('opening portrait uses a longer, cancellable entrance without moving its anchors',async()=>{
-  const h=await setup({reduced:false});h.click('#openPortal');h.advance(1100);const entry=h.animations.findLast(a=>a.element.id==='scene-memories');assert.equal(entry.options.duration,1500);assert.equal(entry.keyframes[0].opacity,0);assert.equal(entry.keyframes[1].opacity,0);assert.ok(entry.keyframes.every(f=>!f.transform));h.advance(200);h.app.go(2);assert.equal(entry.cancelled,true);h.advance(1600);assert.equal(h.app.state.scene,2);assert.equal(h.$('#scene-memories').hidden,true);h.app.replay();h.click('#openPortal');h.advance(1100);const again=h.animations.findLast(a=>a.element.id==='scene-memories');assert.notEqual(again,entry);assert.equal(again.options.duration,1500);await h.close();
+  const h=await setup({reduced:false});h.click('#openPortal');h.advance(1500);const entry=h.animations.findLast(a=>a.element.id==='scene-memories');assert.equal(entry.options.duration,1500);assert.equal(entry.keyframes[0].opacity,0);assert.equal(entry.keyframes[1].opacity,0);assert.ok(entry.keyframes.every(f=>!f.transform));h.advance(200);h.app.go(2);assert.equal(entry.cancelled,true);h.advance(1600);assert.equal(h.app.state.scene,2);assert.equal(h.$('#scene-memories').hidden,true);h.app.replay();h.click('#openPortal');h.advance(1500);const again=h.animations.findLast(a=>a.element.id==='scene-memories');assert.notEqual(again,entry);assert.equal(again.options.duration,1500);await h.close();
 });
 
 
@@ -136,4 +136,24 @@ test('bounded scratch-grid marking matches the original full-grid calculation',a
  const h=await setup(),grid=24,reference=new Set();
  for(let i=0;i<500;i++){const x=((i*73)%503)/503,y=((i*179)%509)/509,r=.02+(i%11)/100;h.app.scratch.mark(x,y,r);for(let gy=0;gy<grid;gy++)for(let gx=0;gx<grid;gx++){const nx=(gx+.5)/grid,ny=(gy+.5)/grid;if((nx-.5)**2+(ny-.5)**2<=.25&&(nx-x)**2+(ny-y)**2<r*r)reference.add(gy*grid+gx);}}
  assert.deepEqual([...h.app.scratch.cells].sort((a,b)=>a-b),[...reference].sort((a,b)=>a-b));await h.close();
+});
+
+
+test('first-tap waits for the renderer and a replay invalidates its pending opening',async()=>{
+ const h=await setup({reduced:false});let resolveReady,opens=0;const assetsReady=new Promise(resolve=>resolveReady=resolve);
+ h.app.effects.director={ready:false,assetsReady,openPortal(){opens++},clear(){},setScene(){},selectAct(){}};
+ h.click('#openPortal');h.advance(5000);assert.equal(h.app.state.scene,0);assert.equal(h.$('#openPortal').getAttribute('aria-busy'),'true');
+ h.app.replay();h.click('#openPortal');resolveReady();await Promise.resolve();assert.equal(opens,1,'only the current opening owns the loaded renderer');h.advance(1499);assert.equal(h.app.state.scene,0);h.advance(1);assert.equal(h.app.state.scene,1);assert.equal(h.$('#openPortal').hasAttribute('aria-busy'),false);await h.close();
+});
+
+test('repeated opening, celebration and finale taps cannot stack their effects',async()=>{
+ const h=await setup({reduced:false});h.click('#openPortal');for(let i=0;i<10;i++)h.click('#openPortal');h.advance(1500);assert.equal(h.app.state.scene,1);assert.equal(h.audio.playCalls,1);
+ h.go(3);h.click('#celebrationTouch');const motes=h.win.document.querySelectorAll('.local-mote').length;h.click('#celebrationTouch');assert.equal(h.win.document.querySelectorAll('.local-mote').length,motes);
+ h.go(7);h.click('#lightSky');const particles=h.app.effects.particles.length;h.click('#lightSky');assert.equal(h.app.effects.particles.length,particles);await h.close();
+});
+
+test('leaving the date cancels its captured gesture and retains smooth brush paths across resizing',async()=>{
+ const h=await setup();h.click('#openPortal');h.advance(30);h.go(2);h.pointer('#goldCanvas','pointerdown',120,220);h.pointer('#goldCanvas','pointermove',160,230);const before=h.app.scratch.cells.size,strokes=h.app.scratch.strokes.length;assert.ok(strokes>0);
+ h.go(3);assert.equal(h.app.scratch.down,false);assert.equal(h.app.scratch.pointer,null);h.pointer('#goldCanvas','pointermove',300,340);assert.equal(h.app.scratch.cells.size,before);assert.equal(h.app.scratch.strokes.length,strokes);
+ h.go(2);Object.defineProperty(h.win,'devicePixelRatio',{value:3,configurable:true});h.app.scratch.draw();assert.equal(h.$('#goldCanvas').width,900);assert.equal(h.app.scratch.strokes.length,strokes);h.app.replay();assert.equal(h.app.scratch.strokes.length,0);await h.close();
 });

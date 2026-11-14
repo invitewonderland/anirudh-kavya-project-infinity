@@ -1,0 +1,330 @@
+[
+  {
+    "cpuRenderSubmitMs": {
+      "mean": 1.062500000745058,
+      "p95": 1.600000023841858
+    },
+    "cpuUpdateMs": {
+      "mean": 0.22583333142101764,
+      "p95": 0.30000001192092896
+    },
+    "device": "ANGLE (AMD, AMD Radeon(TM) 780M (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawCalls": {
+      "mean": 74,
+      "p95": 74
+    },
+    "frameMs": {
+      "mean": 14.636666666666647,
+      "p95": 28.099999999998545
+    },
+    "geometries": 24,
+    "gpuMs": {
+      "mean": 14.040593166666667,
+      "p95": 14.83226
+    },
+    "gpuScope": "whole-frame",
+    "points": {
+      "mean": 24000,
+      "p95": 24000
+    },
+    "renderResolution": "1080x1920",
+    "samples": 240,
+    "scene": 0,
+    "textures": 19,
+    "triangles": {
+      "mean": 204321,
+      "p95": 204321
+    },
+    "viewport": [
+      1080,
+      1920
+    ]
+  },
+  {
+    "cpuRenderSubmitMs": {
+      "mean": 0.64278606781319,
+      "p95": 0.9000000059604645
+    },
+    "cpuUpdateMs": {
+      "mean": 0.21542288652106897,
+      "p95": 0.4000000059604645
+    },
+    "device": "ANGLE (AMD, AMD Radeon(TM) 780M (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawCalls": {
+      "mean": 25,
+      "p95": 25
+    },
+    "frameMs": {
+      "mean": 6.956716417910462,
+      "p95": 7.099999999998545
+    },
+    "geometries": 30,
+    "gpuMs": {
+      "mean": 6.174359999999998,
+      "p95": 7.01784
+    },
+    "gpuScope": "whole-frame",
+    "points": {
+      "mean": 24000,
+      "p95": 24000
+    },
+    "renderResolution": "1080x1920",
+    "samples": 201,
+    "scene": 1,
+    "textures": 20,
+    "triangles": {
+      "mean": 4207,
+      "p95": 4207
+    },
+    "viewport": [
+      1080,
+      1920
+    ]
+  },
+  {
+    "cpuRenderSubmitMs": {
+      "mean": 0.876616915660118,
+      "p95": 1.300000011920929
+    },
+    "cpuUpdateMs": {
+      "mean": 0.2044776117623742,
+      "p95": 0.4000000059604645
+    },
+    "device": "ANGLE (AMD, AMD Radeon(TM) 780M (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawCalls": {
+      "mean": 59,
+      "p95": 59
+    },
+    "frameMs": {
+      "mean": 7.579104477611947,
+      "p95": 13.900000000001455
+    },
+    "geometries": 43,
+    "gpuMs": {
+      "mean": 7.057777543859647,
+      "p95": 8.0636
+    },
+    "gpuScope": "whole-frame",
+    "points": {
+      "mean": 24000,
+      "p95": 24000
+    },
+    "renderResolution": "1080x1920",
+    "samples": 201,
+    "scene": 2,
+    "textures": 20,
+    "triangles": {
+      "mean": 39663,
+      "p95": 39663
+    },
+    "viewport": [
+      1080,
+      1920
+    ]
+  },
+  {
+    "cpuRenderSubmitMs": {
+      "mean": 0.7310344826411731,
+      "p95": 1.0999999940395355
+    },
+    "cpuUpdateMs": {
+      "mean": 0.3793103437999199,
+      "p95": 0.5999999940395355
+    },
+    "device": "ANGLE (AMD, AMD Radeon(TM) 780M (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawCalls": {
+      "mean": 62,
+      "p95": 62
+    },
+    "frameMs": {
+      "mean": 9.081773399014809,
+      "p95": 14.099999999998545
+    },
+    "geometries": 57,
+    "gpuMs": {
+      "mean": 8.32984,
+      "p95": 9.14794
+    },
+    "gpuScope": "whole-frame",
+    "points": {
+      "mean": 24000,
+      "p95": 24000
+    },
+    "renderResolution": "1080x1920",
+    "samples": 203,
+    "scene": 3,
+    "textures": 21,
+    "triangles": {
+      "mean": 16369,
+      "p95": 16369
+    },
+    "viewport": [
+      1080,
+      1920
+    ]
+  },
+  {
+    "cpuRenderSubmitMs": {
+      "mean": 0.8070707068298802,
+      "p95": 1.100000023841858
+    },
+    "cpuUpdateMs": {
+      "mean": 0.22121212097129436,
+      "p95": 0.4000000059604645
+    },
+    "device": "ANGLE (AMD, AMD Radeon(TM) 780M (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawCalls": {
+      "mean": 92,
+      "p95": 92
+    },
+    "frameMs": {
+      "mean": 7.554040404040426,
+      "p95": 13.900000000001455
+    },
+    "geometries": 86,
+    "gpuMs": {
+      "mean": 6.825770178571427,
+      "p95": 7.74048
+    },
+    "gpuScope": "whole-frame",
+    "points": {
+      "mean": 24000,
+      "p95": 24000
+    },
+    "renderResolution": "1080x1920",
+    "samples": 198,
+    "scene": 4,
+    "textures": 22,
+    "triangles": {
+      "mean": 102855,
+      "p95": 102855
+    },
+    "viewport": [
+      1080,
+      1920
+    ]
+  },
+  {
+    "cpuRenderSubmitMs": {
+      "mean": 1.565641025702159,
+      "p95": 1.9000000059604645
+    },
+    "cpuUpdateMs": {
+      "mean": 1.5717948717948718,
+      "p95": 2
+    },
+    "device": "ANGLE (AMD, AMD Radeon(TM) 780M (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawCalls": {
+      "mean": 95,
+      "p95": 95
+    },
+    "frameMs": {
+      "mean": 11.381025641025657,
+      "p95": 14
+    },
+    "geometries": 98,
+    "gpuMs": {
+      "mean": 10.78551927272727,
+      "p95": 11.64654
+    },
+    "gpuScope": "whole-frame",
+    "points": {
+      "mean": 24000,
+      "p95": 24000
+    },
+    "renderResolution": "1080x1920",
+    "samples": 195,
+    "scene": 5,
+    "textures": 22,
+    "triangles": {
+      "mean": 1226985,
+      "p95": 1226985
+    },
+    "viewport": [
+      1080,
+      1920
+    ]
+  },
+  {
+    "cpuRenderSubmitMs": {
+      "mean": 0.5,
+      "p95": 0.7000000178813934
+    },
+    "cpuUpdateMs": {
+      "mean": 0.2269999985396862,
+      "p95": 0.4000000059604645
+    },
+    "device": "ANGLE (AMD, AMD Radeon(TM) 780M (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawCalls": {
+      "mean": 34,
+      "p95": 34
+    },
+    "frameMs": {
+      "mean": 7.374500000000007,
+      "p95": 13.80000000000291
+    },
+    "geometries": 98,
+    "gpuMs": {
+      "mean": 6.473331428571428,
+      "p95": 7.42684
+    },
+    "gpuScope": "whole-frame",
+    "points": {
+      "mean": 24000,
+      "p95": 24000
+    },
+    "renderResolution": "1080x1920",
+    "samples": 200,
+    "scene": 6,
+    "textures": 23,
+    "triangles": {
+      "mean": 7663,
+      "p95": 7663
+    },
+    "viewport": [
+      1080,
+      1920
+    ]
+  },
+  {
+    "cpuRenderSubmitMs": {
+      "mean": 0.4894472365103774,
+      "p95": 0.800000011920929
+    },
+    "cpuUpdateMs": {
+      "mean": 0.15025125676064036,
+      "p95": 0.30000001192092896
+    },
+    "device": "ANGLE (AMD, AMD Radeon(TM) 780M (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawCalls": {
+      "mean": 35,
+      "p95": 35
+    },
+    "frameMs": {
+      "mean": 7.445728643216066,
+      "p95": 13.900000000001455
+    },
+    "geometries": 98,
+    "gpuMs": {
+      "mean": 6.68593625,
+      "p95": 7.14192
+    },
+    "gpuScope": "whole-frame",
+    "points": {
+      "mean": 25320,
+      "p95": 25320
+    },
+    "renderResolution": "1080x1920",
+    "samples": 199,
+    "scene": 7,
+    "textures": 24,
+    "triangles": {
+      "mean": 7663,
+      "p95": 7663
+    },
+    "viewport": [
+      1080,
+      1920
+    ]
+  }
+]

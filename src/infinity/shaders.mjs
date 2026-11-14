@@ -5,7 +5,7 @@ float fbm(vec3 p){float n=0.,a=.5;for(int i=0;i<4;i++){n+=a*noise3(p);p=p*2.03+3
 `;
 export const backgroundVertex=`varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`;
 export const backgroundFragment=`
-uniform sampler2D uFrom,uTo;uniform float uFromScene,uScene,uProgress,uTime,uAspect,uFromAspect,uToAspect,uEnergy,uOpen;uniform vec2 uPointer;
+uniform sampler2D uFrom,uTo;uniform float uFromScene,uScene,uProgress,uTime,uAspect,uFromAspect,uToAspect,uEnergy,uOpen,uDirection;uniform vec2 uPointer;
 varying vec2 vUv;
 ${noise}
 vec2 coverUV(vec2 uv,float ar){vec2 ratio=vec2(min(uAspect/ar,1.),min(ar/uAspect,1.));return (uv-.5)*ratio+.5;}
@@ -31,11 +31,14 @@ vec3 photograph(sampler2D image,vec2 uv,float ar,float s){
 void main(){vec2 uv=vUv;
  if(uProgress>=.999999){gl_FragColor=vec4(photograph(uTo,uv,uToAspect,uScene),1.);return;}
  if(uProgress<=0.){gl_FragColor=vec4(photograph(uFrom,uv,uFromAspect,uFromScene),1.);return;}
- float n=fbm(vec3(uv*5.,uTime*.17));float travel=distance((uv-vec2(.5,.49))*vec2(uAspect,1.),vec2(0));float edge=uProgress*1.7-travel+n*.15;
- float mask=uProgress<=.001?0.:uProgress>=.999?1.:smoothstep(-.055,.055,edge);
- vec3 a=photograph(uFrom,uv,uFromAspect,uFromScene),b=photograph(uTo,uv,uToAspect,uScene);vec3 col=mix(a,b,mask);
- float filament=(1.-smoothstep(.0,.045,abs(edge)))*step(.01,uProgress)*step(uProgress,.99);
- col+=vec3(2.7,1.6,.45)*filament*(.3+.7*n);
+ float n=noise3(vec3(uv*4.,uTime*.12));float curtain=uDirection<0.?1.-uv.x:uv.x;
+ float field=curtain*.72+(1.-uv.y)*.28+sin(uv.y*5.+uTime*.18)*.025+(n-.5)*.045;
+ float edge=mix(-.16,1.16,uProgress)-field;
+ float mask=smoothstep(-.12,.12,edge);float breath=sin(uProgress*3.14159265);
+ vec2 drift=vec2(.011,-.007)*breath*(n-.5);
+ vec3 a=photograph(uFrom,uv+drift,uFromAspect,uFromScene),b=photograph(uTo,uv-drift,uToAspect,uScene);vec3 col=mix(a,b,mask);
+ float filament=exp(-abs(edge)*100.)*breath*(.2+.8*n);
+ col+=vec3(.38,.24,.075)*filament;
  gl_FragColor=vec4(col,1.);
 }`;
 export const atmosphereVertex=`
@@ -44,7 +47,7 @@ void main(){float t=aSeed.x*6.2831853;float travel=uTime*(.025+aSeed.y*.015);vec
  if(uScene>1.5&&uScene<2.5){float r=2.5+aSeed.y*2.8;p=vec3(cos(t+travel)*r,sin(t+travel)*r*.9,(aSeed.z-.5)*5.)+uAnchor;}
  else if(uScene>3.5&&uScene<4.5){float a=t+travel*2.;float r=1.5+aSeed.y*4.;p=vec3(cos(a)*r,sin(a*2.)*.9+aSeed.z*2.,sin(a)*2.5-2.8)+uAnchor;p.y+=sin(a*5.+uTime)*uEnergy*.4;}
  else if(uScene>4.5&&uScene<5.5){p=vec3(sin(t*3.+travel)*(.5+aSeed.y*3.),(aSeed.z-.5)*7.,cos(t*2.-travel)*2.-2.)+uAnchor;}
- else if(uScene>6.5){float x=16.*pow(sin(t),3.);float y=13.*cos(t)-5.*cos(2.*t)-2.*cos(3.*t)-cos(4.*t);float scale=.16+aSeed.y*.025;p=vec3(x*scale,y*scale,(aSeed.z-.5)*5.)+uAnchor;p+=vec3(sin(uTime*.2+t)*.07,cos(uTime*.3+t)*.07,0.);}
+ else if(uScene>6.5){float x=sin(t)*3.05;float y=sin(t*2.)*1.45;float scale=.9+aSeed.y*.08;p=vec3(x*scale,y*scale,(aSeed.z-.5)*5.)+uAnchor;p+=vec3(sin(uTime*.2+t)*.07,cos(uTime*.3+t)*.07,0.);}
  else{p=vec3((aSeed.x-.5)*uWorld.x*1.9,mod(aSeed.y*uWorld.y+uTime*(.025+aSeed.z*.04),uWorld.y)-uWorld.y*.5,-2.-aSeed.z*12.);p.x+=sin(p.y*.5+uTime*.12+aSeed.w*6.)*.25;}
  vec4 mv=modelViewMatrix*vec4(p,1.);gl_Position=projectionMatrix*mv;
  float twinkle=.18+.82*pow(.5+.5*sin(uTime*(.4+aSeed.z)+aSeed.w*50.),6.);
@@ -57,8 +60,8 @@ export const burstVertex=`
 attribute vec3 aVelocity;attribute vec4 aLife;attribute vec3 aTint;uniform float uTime,uDpr;varying float vAlpha,vKind,vSpin;varying vec3 vColor;
 void main(){float age=uTime-aLife.x;float t=age/max(.001,aLife.y);vAlpha=0.;vKind=aLife.w;vSpin=age*2.+aLife.z;
  if(age<0.||t>1.){gl_Position=vec4(2.,2.,2.,1.);gl_PointSize=0.;return;}
- vec3 p=position+aVelocity*age;float buoyancy=vKind>1.5&&vKind<2.5?.42:-.32;p.y+=buoyancy*age*age;p.x+=sin(age*2.5+aLife.z)*.15*t;p.z+=sin(age*2.+aLife.z)*.25;
- vec4 mv=modelViewMatrix*vec4(p,1.);gl_Position=projectionMatrix*mv;gl_PointSize=clamp((vKind<.5?3.4:vKind<1.5?7.5:vKind<2.5?10.:4.5)*uDpr*(16./max(2.,-mv.z))*(1.-t*.35),1.,90.*uDpr);
+ vec3 p=position+aVelocity*age;float buoyancy=(vKind>1.5&&vKind<2.5)||vKind>3.5?.42:-.32;p.y+=buoyancy*age*age;p.x+=sin(age*2.5+aLife.z)*.15*t;p.z+=sin(age*2.+aLife.z)*.25;
+ vec4 mv=modelViewMatrix*vec4(p,1.);gl_Position=projectionMatrix*mv;gl_PointSize=clamp((vKind<.5?3.4:vKind<1.5?7.5:vKind<2.5?10.:vKind<3.5?4.5:13.)*uDpr*(16./max(2.,-mv.z))*(1.-t*.35),1.,90.*uDpr);
  vAlpha=smoothstep(0.,.055,t)*pow(1.-t,1.2);vColor=aTint;
 }`;
 export const burstFragment=`varying float vAlpha,vKind,vSpin;varying vec3 vColor;
@@ -66,19 +69,21 @@ void main(){vec2 p=gl_PointCoord-.5;float c=cos(vSpin),s=sin(vSpin);p=mat2(c,-s,
  if(vKind<.5){alpha=1.-smoothstep(.15,.2,max(abs(p.x)*1.3,abs(p.y)*2.8));}
  else if(vKind<1.5){vec2 q=p*vec2(1.4,1.);alpha=(1.-smoothstep(.35,.4,length(q)))*(.65+.35*cos(p.x*7.));}
  else if(vKind<2.5){float wing=sin(vSpin*5.)*.2+.72;vec2 q=p*vec2(1./wing,1.);float shape=pow(q.x*q.x+q.y*q.y-.11,3.)-q.x*q.x*q.y*q.y*q.y;alpha=1.-smoothstep(-.004,.004,shape);alpha*=1.-smoothstep(.4,.5,length(p));}
- else{float d=length(p);alpha=exp(-d*d*55.)+.3*pow(max(0.,1.-abs(p.x)*15.),4.)*exp(-abs(p.y)*9.)+.3*pow(max(0.,1.-abs(p.y)*15.),4.)*exp(-abs(p.x)*9.);}
- if(alpha<.01)discard;gl_FragColor=vec4(vColor*1.8,alpha*vAlpha*(vKind>1.5&&vKind<2.5?.055:.16));
+ else if(vKind<3.5){float d=length(p);alpha=exp(-d*d*55.)+.3*pow(max(0.,1.-abs(p.x)*15.),4.)*exp(-abs(p.y)*9.)+.3*pow(max(0.,1.-abs(p.y)*15.),4.)*exp(-abs(p.x)*9.);}
+ else{vec2 q=gl_PointCoord-.5;float head=1.-smoothstep(.105,.135,length((q-vec2(-.08,-.22))*vec2(.8,1.35)));float stem=(1.-smoothstep(.018,.035,abs(q.x-.015)))*step(-.21,q.y)*step(q.y,.32);float flag=(1.-smoothstep(.035,.065,abs(q.y-(.30-(q.x-.015)*1.6))))*step(.015,q.x)*step(q.x,.21);alpha=max(head,max(stem,flag));}
+ if(alpha<.01)discard;gl_FragColor=vec4(vColor*1.8,alpha*vAlpha*((vKind>1.5&&vKind<2.5)||vKind>3.5?.055:.16));
 }`;
 export const ribbonVertex=`
 attribute float aT;attribute float aSide;uniform float uTime,uScene,uIndex,uEnergy,uKick,uScale;uniform vec3 uAnchor;varying float vT,vSide;
 vec3 curve(float t){float a=t*6.2831853+uTime*.1+uIndex*.7;vec3 p;
- if(uScene>5.5){float h=t*6.2831853;p=vec3(16.*pow(sin(h),3.),13.*cos(h)-5.*cos(2.*h)-2.*cos(3.*h)-cos(4.*h),0.)*.17;p.z=sin(a*2.)*.5;}
+ if(uScene>6.5){float h=t*6.2831853;p=vec3(sin(h)*3.05,sin(h*2.)*1.45,sin(a*2.)*.35);p.xy*=1.+(uIndex-6.5)*.006;}
+ else if(uScene>5.5){float h=t*6.2831853;p=vec3(16.*pow(sin(h),3.),13.*cos(h)-5.*cos(2.*h)-2.*cos(3.*h)-cos(4.*h),0.)*.17;p.xy*=1.+(uIndex-6.5)*.006;p.z=sin(a*2.)*.5;}
  else if(uScene>4.5){p=vec3(sin(a*2.)*(1.+uIndex*.08),cos(a)*2.6,sin(a)*1.2);}
  else if(uScene>3.5){p=vec3(cos(a)*(2.4+uIndex*.12),sin(a*2.)*(.5+uEnergy)+.5,sin(a)*1.6);}
  else if(uScene>1.5&&uScene<2.5){float radius=2.7+uIndex*.035;p=vec3(cos(a)*radius,sin(a)*radius,sin(a*2.)*.18);}
  else{float radius=2.4+uIndex*.045;p=vec3(cos(a)*radius,sin(a)*radius*(.7+uIndex*.01),sin(a*2.)*.6);}
  p*=uScale;p+=uAnchor;p.y+=sin(a*5.+uTime*.9)*(.025+uEnergy*.1);return p;}
-void main(){vec3 p=curve(aT),q=curve(aT+.001);vec3 tangent=normalize(q-p);vec3 side=normalize(cross(tangent,vec3(0,0,1)));float width=(.006+uKick*.025+uEnergy*.02)*sin(aT*3.14159);p+=side*aSide*width;gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.);vT=aT;vSide=aSide;}
+void main(){vec3 p=curve(aT),q=curve(aT+.001);vec3 tangent=normalize(q-p);vec3 side=normalize(cross(tangent,vec3(0,0,1)));float width=(.006+uKick*(uScene>5.5?.008:.025)+uEnergy*.012)*sin(aT*3.14159);p+=side*aSide*width;gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.);vT=aT;vSide=aSide;}
 `;
 export const ribbonFragment=`uniform float uTime,uIndex,uOpacity,uEnergy,uProgress;varying float vT,vSide;void main(){float wave=.4+.6*pow(.5+.5*sin(vT*36.-uTime*1.3+uIndex),3.);vec3 c=mix(vec3(.7,1.15,1.1),vec3(2.9,1.7,.5),.5+.5*sin(uIndex*.7));gl_FragColor=vec4(c*(1.+uEnergy),pow(max(0.,1.-abs(vSide)),.45)*wave*uOpacity*(1.-smoothstep(uProgress,uProgress+.025,vT)));}`;
 export const filmShader={

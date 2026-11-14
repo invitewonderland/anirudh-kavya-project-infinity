@@ -1,0 +1,9 @@
+{
+  "archive": "Anirudh-Kavya-Project-Infinity.zip",
+  "version": "2.3.0",
+  "sha256": "7ed4432eb76a2d8cc13f6e580028abf6c539ba199d549891d7a1bbb304e1069b",
+  "sizeBytes": 14427047,
+  "files": 193,
+  "allFilesMatchWorkspace": true,
+  "note": "This verification file is outside the ZIP to avoid self-reference."
+}
