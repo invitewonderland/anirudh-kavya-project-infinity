@@ -1,0 +1,237 @@
+{
+  "url": "https://invitewonderland.github.io/armaan-meher-noor-mahal/",
+  "status": 200,
+  "finalUrl": "https://invitewonderland.github.io/armaan-meher-noor-mahal/",
+  "repository": "https://github.com/invitewonderland/armaan-meher-noor-mahal",
+  "branch": "codex/noor-mahal",
+  "commit": "dbe08675e44f86da15f3a2bbf8623aa19c457439",
+  "eightChaptersPresent": true,
+  "publicWithoutSignIn": true,
+  "checkedFiles": 32,
+  "assets": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 21992,
+      "matchesLocal": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "type": "application/manifest+json; charset=utf-8",
+      "bytes": 270,
+      "matchesLocal": true
+    },
+    {
+      "path": "noor-fonts.css",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "bytes": 1863,
+      "matchesLocal": true
+    },
+    {
+      "path": "noor.css",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "bytes": 59364,
+      "matchesLocal": true
+    },
+    {
+      "path": "THREE-LICENSE.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "bytes": 1081,
+      "matchesLocal": true
+    },
+    {
+      "path": "js/noor.bundle.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 604906,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/audio/A_Canopy_of_White_Roses.mp3",
+      "status": 200,
+      "type": "audio/mp3",
+      "bytes": 4010094,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/anand-thumb.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 22630,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/anand.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 533184,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/armaan-thumb.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 22150,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/armaan.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 479772,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/meher-thumb.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 25160,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/meher.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 544118,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/mehndi-thumb.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 20666,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/mehndi.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 513412,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/monogram.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "bytes": 339,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/palace-thumb.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 22620,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/palace.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 583352,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/punjab-thumb.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 20998,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/punjab.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 474486,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/sangeet-thumb.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 21776,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/sangeet.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 481034,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/together-thumb.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 22944,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/together.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 563436,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/fonts/cormorant-garamond-italic-latin.woff2",
+      "status": 200,
+      "type": "font/woff2",
+      "bytes": 39260,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/fonts/cormorant-garamond-normal-latin.woff2",
+      "status": 200,
+      "type": "font/woff2",
+      "bytes": 37640,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/fonts/cormorantgaramond-OFL.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "bytes": 4387,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/fonts/manrope-normal-latin.woff2",
+      "status": 200,
+      "type": "font/woff2",
+      "bytes": 24532,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/fonts/manrope-OFL.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "bytes": 4387,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/fonts/noto-serif-gurmukhi-normal-gurmukhi.woff2",
+      "status": 200,
+      "type": "font/woff2",
+      "bytes": 12596,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/fonts/noto-serif-gurmukhi-normal-latin.woff2",
+      "status": 200,
+      "type": "font/woff2",
+      "bytes": 11960,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/noor/fonts/notoserifgurmukhi-OFL.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "bytes": 4384,
+      "matchesLocal": true
+    }
+  ]
+}

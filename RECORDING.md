@@ -1,24 +1,19 @@
-# Project Infinity — one journey, a short cinematic recording
+# Noor Mahal / The Living Heirloom — mobile recording notes
 
-Record the actual interactive invitation in a portrait browser at 9:16. Use the fullscreen icon if your phone supports it. Keep the same page; there is no recording mode to enable.
+Open the live invitation on a portrait phone, turn off notifications and set comfortable media volume. Use native fullscreen or the home-screen presentation when the browser supports it. Record internal browser audio where the device permits it.
 
-Before recording, let the opening and first portrait load, set the phone's media volume, and confirm that your screen recorder is configured to capture the audio you want. OS/browser restrictions can affect internal audio capture, so check a short test recording first.
+Suggested 45–60 second edit:
 
-## Suggested 22-second highlight
+1. Hold the deep emerald palace doors in the mirrored hall for two seconds. Touch the gold monogram seal and let both leaves open completely.
+2. In the story room, show the complete palace portrait, the bride, the groom and the mustard-field moment. Let a selected frame settle before changing it.
+3. Enter the celebrations. Change Mehndi to Sangeet, then Anand Karaj. Open the ceremony invitation briefly.
+4. In the rang mahal, play Dha–Na–Tin. Replay your own phrase while the dhol and the ceremonial platform answer each beat. Mute or leave the room to stop it.
+5. Write a short personal blessing and let the embroidery preview respond to the words. Leave about three seconds for the thread to grow across the phulkari, then show the keepsake action.
+6. Let the formal invitation unfold. Open the portrait keepsake.
+7. Enter the finale. Touch “Let our forever take flight” and hold for six seconds as the lotus opens, the water garden warms and gold rises around their complete portrait.
 
-| Approximate time | Live interaction | Intended moment |
-| --- | --- | --- |
-| 0–2 s | Touch the opening seal | Assembled gold arch and folded velvet release into the couple's world |
-| 2–4 s | Briefly show the couple; touch the next arrow | Human connection before the next surprise |
-| 4–7 s | Scratch two or three confident strokes across the gold | Tactile foil, flying gold flakes, date revealed |
-| 7–10 s | Next; light the welcome lantern, or choose the wedding and touch the rose | An entire environment reacts |
-| 10–14 s | Next; play C–E–G on the ivory piano | Ebony and gold instrument, musical notes and sound-reactive ribbons |
-| 14–16 s | Next; touch the garden's central rose | A wave opens the 3D flowers without pausing to type |
-| 16–19 s | Next; hold the promise seal | A heart is drawn in light |
-| 19–22 s | Next; make the sky ours | Overhead stars, a golden infinity constellation and Invite Wonderland credit |
+The experience is manually paced. It has no forced auto-tour or timed slide advance. Use its room map to revisit a moment for another take. A blessing is private to that browser; clear a sample using the visible “Clear my saved blessings” action after recording. “Feel it again” resets the palace, score and finale while keeping any deliberately saved blessing.
 
-The timings are suggestions, not a timer or automatic sequence. A recording can be longer if you linger, explore photographs, select all three celebration worlds, play your own tune or write a personal blessing. Fast navigation completes a running transition before beginning the next, so an intentional quick tap is not discarded.
+Check recording, audio capture, browser chrome and social-platform compression on the actual device. The source images stay intact; editing or platform crops should preserve the couple's intended composition.
 
-For a seamless ending, finish on the final luminous sky and Invite Wonderland credit, or use “Begin again” to return to the same first light. Make a clean recording without browser notifications or personal text if you intend to publish it.
-
-The experience was designed around an immediate visual hook, tactile cause and effect, changing visual rhythms and a replayable ending. Reach, watch time, engagement and business results are not guaranteed by the website.
+A gentle touch on open palace space sends ripples through the water reflection. The original photographs remain complete in every frame; tapping a portrait opens its intact close view.

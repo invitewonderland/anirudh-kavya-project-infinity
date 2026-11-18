@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Invite Wonderland//Noor Mahal//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:armaan-meher-mehndi-20261218T093000Z@invitewonderland
+DTSTAMP:20261118T152550Z
+DTSTART:20261218T093000Z
+DTEND:20261218T123000Z
+SUMMARY:Armaan & Meher — Mehndi
+LOCATION:The Marigold Court\, Noor Mahal\, Patiala
+DESCRIPTION:With love\, the Singh & Kaur families.\nA little colour\, a lit
+ tle mischief.\nAnd a whole lot of love.\nSunshine hues & playful Punjabi e
+ legance
+END:VEVENT
+END:VCALENDAR

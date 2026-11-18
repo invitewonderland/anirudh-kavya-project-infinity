@@ -1,0 +1,13 @@
+[
+  {
+    "room": 6,
+    "samples": 240,
+    "renderCpuMedianMs": 0.6000000014901161,
+    "renderCpuP95Ms": 0.9000000022351742,
+    "drawCalls": 17,
+    "triangles": 38540,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  }
+]

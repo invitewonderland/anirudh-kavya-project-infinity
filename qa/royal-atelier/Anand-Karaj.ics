@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Invite Wonderland//Noor Mahal//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:armaan-meher-anand-20261220T043000Z@invitewonderland
+DTSTAMP:20261118T144829Z
+DTSTART:20261220T043000Z
+DTEND:20261220T063000Z
+SUMMARY:Armaan & Meher — Anand Karaj
+LOCATION:The Darbar Sahib\, Noor Mahal\, Patiala
+DESCRIPTION:With love\, the Singh & Kaur families.\nTwo hearts\, surrounded
+  by love.\nA beautiful beginning to our forever.\nTraditional attire\, wit
+ h a head covering for the ceremony
+END:VEVENT
+END:VCALENDAR

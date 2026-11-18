@@ -1,0 +1,13 @@
+{
+  "commit": "de9eb8035205e1be0e671e013e0bf5f294aa540c",
+  "branch": "codex/noor-mahal",
+  "url": "https://invitewonderland.github.io/armaan-meher-noor-mahal/?edition=royal-atelier",
+  "pagesStatus": "built",
+  "publicAssets": 65,
+  "allAssetsMatched": true,
+  "tests": 8,
+  "publicBrowserErrors": 0,
+  "publicBrowserWarnings": 0,
+  "allSevenChaptersReviewed": true,
+  "viewportOverride": "reset"
+}

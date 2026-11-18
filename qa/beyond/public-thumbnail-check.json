@@ -1,0 +1,42 @@
+[
+  {
+    "loading": "eager",
+    "source": "assets/noor/together-thumb.webp",
+    "width": 240
+  },
+  {
+    "loading": "eager",
+    "source": "assets/noor/palace-thumb.webp",
+    "width": 240
+  },
+  {
+    "loading": "eager",
+    "source": "assets/noor/punjab-thumb.webp",
+    "width": 240
+  },
+  {
+    "loading": "eager",
+    "source": "assets/noor/meher-thumb.webp",
+    "width": 240
+  },
+  {
+    "loading": "eager",
+    "source": "assets/noor/armaan-thumb.webp",
+    "width": 240
+  },
+  {
+    "loading": "eager",
+    "source": "assets/noor/mehndi-thumb.webp",
+    "width": 240
+  },
+  {
+    "loading": "eager",
+    "source": "assets/noor/sangeet-thumb.webp",
+    "width": 240
+  },
+  {
+    "loading": "eager",
+    "source": "assets/noor/anand-thumb.webp",
+    "width": 240
+  }
+]

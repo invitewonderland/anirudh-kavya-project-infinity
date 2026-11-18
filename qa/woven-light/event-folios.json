@@ -1,0 +1,66 @@
+[
+  {
+    "contain": "contain",
+    "details": "Friday, 18 December 2026 · 3:00 PM IST",
+    "display": [
+      303.056640625,
+      303.3577575683594
+    ],
+    "event": "0",
+    "natural": [
+      1254,
+      1254
+    ],
+    "photo": "mehndi",
+    "scrollable": true,
+    "title": "The Mehndi"
+  },
+  {
+    "contain": "contain",
+    "details": "Saturday, 19 December 2026 · 7:00 PM IST",
+    "display": [
+      303.758544921875,
+      304.1626892089844
+    ],
+    "event": "1",
+    "natural": [
+      1254,
+      1254
+    ],
+    "photo": "sangeet",
+    "scrollable": true,
+    "title": "The Sangeet"
+  },
+  {
+    "contain": "contain",
+    "details": "Sunday, 20 December 2026 · 10:00 AM IST",
+    "display": [
+      303.3800964355469,
+      303.7283020019531
+    ],
+    "event": "2",
+    "natural": [
+      1254,
+      1254
+    ],
+    "photo": "anand",
+    "scrollable": true,
+    "title": "The Anand Karaj"
+  },
+  {
+    "contain": "contain",
+    "details": "Sunday, 20 December 2026 · 7:30 PM IST",
+    "display": [
+      303.2158203125,
+      332.11126708984375
+    ],
+    "event": "3",
+    "natural": [
+      1199,
+      1312
+    ],
+    "photo": "palace",
+    "scrollable": true,
+    "title": "The Reception"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "room": 0,
+    "samples": 240,
+    "renderCpuMedianMs": 0.5999999977648258,
+    "renderCpuP95Ms": 0.9000000022351742,
+    "drawCalls": 20,
+    "triangles": 23543,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  },
+  {
+    "room": 3,
+    "samples": 240,
+    "renderCpuMedianMs": 0.5999999977648258,
+    "renderCpuP95Ms": 1,
+    "drawCalls": 23,
+    "triangles": 23592,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  },
+  {
+    "room": 6,
+    "samples": 240,
+    "renderCpuMedianMs": 0.5,
+    "renderCpuP95Ms": 0.8999999985098839,
+    "drawCalls": 16,
+    "triangles": 36380,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  }
+]

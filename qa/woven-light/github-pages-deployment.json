@@ -1,0 +1,22 @@
+{
+  "commit": "f517f6be0c67dc98ec527bed31e8c4a890325e57",
+  "branch": "codex/noor-mahal",
+  "url": "https://invitewonderland.github.io/armaan-meher-noor-mahal/?edition=woven-light&v=f517f6b",
+  "pagesStatus": "built",
+  "publicAssets": 66,
+  "allAssetsMatched": true,
+  "tests": 9,
+  "publicGateOpeningCheck": {
+    "display": "none",
+    "hidden": true,
+    "nameRects": 0,
+    "phase": "opening"
+  },
+  "publicBrowserErrors": 0,
+  "publicBrowserWarnings": 0,
+  "allSevenChaptersReviewed": true,
+  "viewportOverride": "reset",
+  "replayGateRestored": true,
+  "publicBrowserReviewCommit": "9b1564a109b75a5080c8d7d0c1948d9b2aaaa87f",
+  "finalCopyOnlyUpdate": true
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "date": "18\nDECEMBER 2026\n\n3:00 PM",
+    "display": [
+      292.9125061035156,
+      292.9125061035156
+    ],
+    "event": "The Mehndi.",
+    "natural": [
+      1254,
+      1254
+    ],
+    "venue": "The Marigold Court · Noor Mahal, Patiala"
+  },
+  {
+    "date": "19\nDECEMBER 2026\n\n7:00 PM",
+    "display": [
+      292.9125061035156,
+      292.9125061035156
+    ],
+    "event": "The Sangeet.",
+    "natural": [
+      1254,
+      1254
+    ],
+    "venue": "The Sheesh Mahal · Noor Mahal, Patiala"
+  },
+  {
+    "date": "20\nDECEMBER 2026\n\n10:00 AM",
+    "display": [
+      292.9125061035156,
+      292.91253662109375
+    ],
+    "event": "The Anand Karaj.",
+    "natural": [
+      1254,
+      1254
+    ],
+    "venue": "The Darbar Sahib · Noor Mahal, Patiala"
+  },
+  {
+    "date": "20\nDECEMBER 2026\n\n7:30 PM",
+    "display": [
+      292.9125061035156,
+      320.5249938964844
+    ],
+    "event": "The Reception.",
+    "natural": [
+      1199,
+      1312
+    ],
+    "venue": "The Palace Gardens · Noor Mahal, Patiala"
+  }
+]

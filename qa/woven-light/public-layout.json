@@ -1,0 +1,453 @@
+[
+  {
+    "letterScroll": null,
+    "phase": "journey",
+    "photos": [
+      {
+        "file": "together",
+        "fit": "contain",
+        "h": 335,
+        "w": 306.1499938964844
+      }
+    ],
+    "room": "1",
+    "rootScroll": 0,
+    "text": [
+      {
+        "id": "storyKicker",
+        "out": false,
+        "overflow": false,
+        "text": "I · WHEN TWO WORLDS BECOME ONE"
+      },
+      {
+        "id": "storyTitle",
+        "out": false,
+        "overflow": false,
+        "text": "And then,there was you."
+      },
+      {
+        "id": "storyLine",
+        "out": false,
+        "overflow": false,
+        "text": "Of all the places our hearts could have called home,they cho"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "Where the world feels like home.A & M"
+      },
+      {
+        "id": "enlargePhoto",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      }
+    ]
+  },
+  {
+    "letterScroll": null,
+    "phase": "journey",
+    "photos": [
+      {
+        "file": "mehndi",
+        "fit": "contain",
+        "h": 317.2749938964844,
+        "w": 317.2749938964844
+      }
+    ],
+    "room": "2",
+    "rootScroll": 0,
+    "text": [
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "II · FOUR CELEBRATIONS, ONE EXTRAORDINARY FOREVER"
+      },
+      {
+        "id": "eventKicker",
+        "out": false,
+        "overflow": false,
+        "text": "COLOUR ON OUR HANDS. JOY IN OUR HEARTS."
+      },
+      {
+        "id": "eventTitle",
+        "out": false,
+        "overflow": false,
+        "text": "The Mehndi."
+      },
+      {
+        "id": "eventTime",
+        "out": false,
+        "overflow": false,
+        "text": "3:00 PM"
+      },
+      {
+        "id": "eventVenue",
+        "out": false,
+        "overflow": false,
+        "text": "The Marigold Court · Noor Mahal, Patiala"
+      },
+      {
+        "id": "eventDetails",
+        "out": false,
+        "overflow": false,
+        "text": "Your celebration invitation"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "Dipped in love."
+      },
+      {
+        "id": "enlargeEvent",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "eventTab0",
+        "out": false,
+        "overflow": false,
+        "text": "18 DECMehndi"
+      },
+      {
+        "id": "eventTab1",
+        "out": false,
+        "overflow": false,
+        "text": "♫19 DECSangeet"
+      },
+      {
+        "id": "eventTab2",
+        "out": false,
+        "overflow": false,
+        "text": "20 DECAnand Karaj"
+      },
+      {
+        "id": "eventTab3",
+        "out": false,
+        "overflow": false,
+        "text": "20 DECReception"
+      }
+    ]
+  },
+  {
+    "letterScroll": null,
+    "phase": "journey",
+    "photos": [],
+    "room": "3",
+    "rootScroll": 0,
+    "text": [
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "III · THE RANG MAHAL"
+      },
+      {
+        "id": "rhythmTitle",
+        "out": false,
+        "overflow": false,
+        "text": "This joy hasa heartbeat."
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "A little Punjabi soul.A little mischief in your fingertips."
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "THE HEART ADha"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "THE JOY SDhin"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "THE SPARK DNa"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "THE LIGHT FTin"
+      },
+      {
+        "id": "playCelebration",
+        "out": false,
+        "overflow": false,
+        "text": "▷Play the celebration"
+      },
+      {
+        "id": "playMyRhythm",
+        "out": false,
+        "overflow": false,
+        "text": "↺Play my rhythm"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "YOUR TOUCH BECOMES PART OF OUR CELEBRATION."
+      }
+    ]
+  },
+  {
+    "letterScroll": null,
+    "phase": "journey",
+    "photos": [],
+    "room": "4",
+    "rootScroll": 0,
+    "text": [
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "IV · A PHULKARI OF BLESSINGS"
+      },
+      {
+        "id": "blessingTitle",
+        "out": false,
+        "overflow": false,
+        "text": "Your words.Our beautiful thread."
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "In the spirit of phulkari, every blessingbecomes a pattern s"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "YOUR NAME OPTIONAL"
+      },
+      {
+        "id": "guestName",
+        "out": false,
+        "overflow": false,
+        "text": "A name they love…"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "A FEW WORDS FROM YOUR HEART"
+      },
+      {
+        "id": "blessingText",
+        "out": false,
+        "overflow": false,
+        "text": "May your forever be filled with…"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "Weave my blessing"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "A private keepsake. Saved only on this device."
+      }
+    ]
+  },
+  {
+    "letterScroll": {
+      "client": 684,
+      "content": 684
+    },
+    "phase": "journey",
+    "photos": [
+      {
+        "file": "anand",
+        "fit": "contain",
+        "h": 227.4750061035156,
+        "w": 227.4750061035156
+      }
+    ],
+    "room": "5",
+    "rootScroll": 0,
+    "text": [
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "Anand Karaj"
+      },
+      {
+        "id": "enlargeCeremony",
+        "out": false,
+        "overflow": false,
+        "text": ""
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "V · A LETTER FROM OUR HEARTS"
+      },
+      {
+        "id": "letterTitle",
+        "out": false,
+        "overflow": false,
+        "text": "The greatest giftis having you there."
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "Armaan Singh & Meher Kaur"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "With the blessings of our families,we invite you to celebrat"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "Sunday · Anand Karaj · 10:00 AM"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "The Darbar Sahib · Noor Mahal, Patiala"
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "Our celebration is incomplete without you."
+      },
+      {
+        "id": "openKeepsake",
+        "out": false,
+        "overflow": false,
+        "text": "A little piece of our forever"
+      },
+      {
+        "id": "ceremonyCalendar",
+        "out": false,
+        "overflow": false,
+        "text": "Keep the date ↓"
+      }
+    ]
+  },
+  {
+    "letterScroll": null,
+    "phase": "journey",
+    "photos": [
+      {
+        "file": "together",
+        "fit": "contain",
+        "h": 314.1457214355469,
+        "w": 287.7121276855469
+      }
+    ],
+    "room": "6",
+    "rootScroll": 0,
+    "text": [
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "VI · SOME STORIES NEVER END"
+      },
+      {
+        "id": "foreverTitle",
+        "out": false,
+        "overflow": false,
+        "text": "And this isonly the beginning."
+      },
+      {
+        "id": "",
+        "out": false,
+        "overflow": false,
+        "text": "In this life. In every life.A & M"
+      },
+      {
+        "id": "takeFlight",
+        "out": false,
+        "overflow": false,
+        "text": "Let our forever take flight"
+      },
+      {
+        "id": "shareInvitation",
+        "out": false,
+        "overflow": false,
+        "text": "Share the wonder"
+      },
+      {
+        "id": "replay",
+        "out": false,
+        "overflow": false,
+        "text": "Feel it again ↺"
+      }
+    ]
+  }
+]

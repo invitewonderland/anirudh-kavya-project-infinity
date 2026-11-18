@@ -1,0 +1,79 @@
+[
+  {
+    "room": 0,
+    "samples": 240,
+    "renderCpuMedianMs": 0.599999999627471,
+    "renderCpuP95Ms": 1,
+    "drawCalls": 15,
+    "triangles": 15477,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  },
+  {
+    "room": 1,
+    "samples": 240,
+    "renderCpuMedianMs": 0.2999999988824129,
+    "renderCpuP95Ms": 0.40000000037252903,
+    "drawCalls": 2,
+    "triangles": 2,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  },
+  {
+    "room": 2,
+    "samples": 240,
+    "renderCpuMedianMs": 0.2999999988824129,
+    "renderCpuP95Ms": 0.40000000037252903,
+    "drawCalls": 2,
+    "triangles": 2,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  },
+  {
+    "room": 3,
+    "samples": 240,
+    "renderCpuMedianMs": 0.599999999627471,
+    "renderCpuP95Ms": 0.900000000372529,
+    "drawCalls": 13,
+    "triangles": 11942,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  },
+  {
+    "room": 4,
+    "samples": 240,
+    "renderCpuMedianMs": 0.2000000011175871,
+    "renderCpuP95Ms": 0.40000000037252903,
+    "drawCalls": 2,
+    "triangles": 2,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  },
+  {
+    "room": 5,
+    "samples": 240,
+    "renderCpuMedianMs": 0.2999999988824129,
+    "renderCpuP95Ms": 0.5,
+    "drawCalls": 2,
+    "triangles": 2,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  },
+  {
+    "room": 6,
+    "samples": 240,
+    "renderCpuMedianMs": 0.40000000037252903,
+    "renderCpuP95Ms": 0.8000000007450581,
+    "drawCalls": 6,
+    "triangles": 11810,
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1.0000000149011612
+  }
+]

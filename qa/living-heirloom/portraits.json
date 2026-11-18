@@ -1,0 +1,114 @@
+[
+  {
+    "captionClear": true,
+    "display": [
+      306.1499938964844,
+      335
+    ],
+    "fit": "contain",
+    "natural": [
+      1199,
+      1312
+    ],
+    "photo": "0",
+    "rootScroll": 0
+  },
+  {
+    "captionClear": true,
+    "display": [
+      306.1499938964844,
+      335.0000305175781
+    ],
+    "fit": "contain",
+    "natural": [
+      1199,
+      1312
+    ],
+    "photo": "1",
+    "rootScroll": 0
+  },
+  {
+    "captionClear": true,
+    "display": [
+      306.13751220703125,
+      335.0000305175781
+    ],
+    "fit": "contain",
+    "natural": [
+      1199,
+      1312
+    ],
+    "photo": "2",
+    "rootScroll": 0
+  },
+  {
+    "captionClear": true,
+    "display": [
+      306.1499938964844,
+      335
+    ],
+    "fit": "contain",
+    "natural": [
+      1199,
+      1312
+    ],
+    "photo": "3",
+    "rootScroll": 0
+  },
+  {
+    "captionClear": true,
+    "display": [
+      306.1499938964844,
+      335
+    ],
+    "fit": "contain",
+    "natural": [
+      1199,
+      1312
+    ],
+    "photo": "4",
+    "rootScroll": 0
+  },
+  {
+    "captionClear": true,
+    "display": [
+      306.1499938964844,
+      306.1500244140625
+    ],
+    "fit": "contain",
+    "natural": [
+      1254,
+      1254
+    ],
+    "photo": "5",
+    "rootScroll": 0
+  },
+  {
+    "captionClear": true,
+    "display": [
+      306.1499938964844,
+      306.1499938964844
+    ],
+    "fit": "contain",
+    "natural": [
+      1254,
+      1254
+    ],
+    "photo": "6",
+    "rootScroll": 0
+  },
+  {
+    "captionClear": true,
+    "display": [
+      306.1499938964844,
+      306.1499938964844
+    ],
+    "fit": "contain",
+    "natural": [
+      1254,
+      1254
+    ],
+    "photo": "7",
+    "rootScroll": 0
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "size": [
+      320,
+      568
+    ],
+    "canvas": [
+      237,
+      206
+    ],
+    "font": 22.01775,
+    "frame": {
+      "bottom": 449.1000061035156,
+      "height": 246,
+      "left": 24.625,
+      "right": 284.9750061035156,
+      "top": 203.1000061035156,
+      "width": 260.3500061035156,
+      "x": 24.625,
+      "y": 203.1000061035156
+    },
+    "horizontalOverflow": false,
+    "lines": 4,
+    "minHeight": "246px",
+    "room": [
+      450,
+      573
+    ],
+    "text": "May your forever be filled with love, laughter and the warmth of home.",
+    "wordsInCloth": true
+  },
+  {
+    "size": [
+      375,
+      667
+    ],
+    "canvas": [
+      283,
+      244
+    ],
+    "font": 26.35619943237305,
+    "frame": {
+      "bottom": 493.6999969482422,
+      "height": 284,
+      "left": 28.899999618530273,
+      "right": 335.8999996185303,
+      "top": 209.6999969482422,
+      "width": 307,
+      "x": 28.899999618530273,
+      "y": 209.6999969482422
+    },
+    "horizontalOverflow": false,
+    "lines": 4,
+    "minHeight": "284px",
+    "room": [
+      549,
+      582
+    ],
+    "text": "May your forever be filled with love, laughter and the warmth of home.",
+    "wordsInCloth": true
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "canvas": [
+      306,
+      347
+    ],
+    "font": 28.478925567626952,
+    "frame": {
+      "bottom": 623.1000061035156,
+      "height": 386.375,
+      "left": 30.287500381469727,
+      "right": 360.112512588501,
+      "top": 236.7250061035156,
+      "width": 329.82501220703125,
+      "x": 30.287500381469727,
+      "y": 236.7250061035156
+    },
+    "horizontalOverflow": false,
+    "lines": 4,
+    "minHeight": "305px",
+    "room": [
+      709,
+      709
+    ],
+    "text": "May your forever be filled with love, laughter and the warmth of home.",
+    "wordsInCloth": true
+  },
+  {
+    "size": [
+      820,
+      1180
+    ],
+    "canvas": [
+      669,
+      661
+    ],
+    "font": 62.228625,
+    "frame": {
+      "bottom": 959.1000366210938,
+      "height": 700.4000244140625,
+      "left": 63.63750076293945,
+      "right": 756.3625373840332,
+      "top": 258.70001220703125,
+      "width": 692.7250366210938,
+      "x": 63.63750076293945,
+      "y": 258.70001220703125
+    },
+    "horizontalOverflow": false,
+    "lines": 4,
+    "minHeight": "612px",
+    "room": [
+      1045,
+      1045
+    ],
+    "text": "May your forever be filled with love, laughter and the warmth of home.",
+    "wordsInCloth": true
+  },
+  {
+    "size": [
+      844,
+      390
+    ],
+    "canvas": [
+      346,
+      301
+    ],
+    "font": 32.40080209350586,
+    "frame": {
+      "bottom": 407.28702545166016,
+      "height": 342.5740661621094,
+      "left": 403.4427185058594,
+      "right": 775.7073364257812,
+      "top": 64.71295928955078,
+      "width": 372.2646179199219,
+      "x": 403.4427185058594,
+      "y": 64.71295928955078
+    },
+    "horizontalOverflow": false,
+    "lines": 4,
+    "minHeight": "340px",
+    "room": [
+      290,
+      371
+    ],
+    "text": "May your forever be filled with love, laughter and the warmth of home.",
+    "wordsInCloth": true
+  },
+  {
+    "size": [
+      1440,
+      1000
+    ],
+    "canvas": [
+      647,
+      726
+    ],
+    "font": 60.60627905273437,
+    "frame": {
+      "bottom": 900.3718872070312,
+      "height": 784.7437744140625,
+      "left": 639.8606567382812,
+      "right": 1327.514404296875,
+      "top": 115.62811279296876,
+      "width": 687.6537475585938,
+      "x": 639.8606567382812,
+      "y": 115.62811279296876
+    },
+    "horizontalOverflow": false,
+    "lines": 4,
+    "minHeight": "613px",
+    "room": [
+      840,
+      840
+    ],
+    "text": "May your forever be filled with love, laughter and the warmth of home.",
+    "wordsInCloth": true
+  }
+]

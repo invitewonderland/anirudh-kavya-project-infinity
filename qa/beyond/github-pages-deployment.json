@@ -1,0 +1,33 @@
+{
+  "url": "https://invitewonderland.github.io/armaan-meher-noor-mahal/",
+  "repository": "https://github.com/invitewonderland/armaan-meher-noor-mahal",
+  "branch": "codex/noor-mahal",
+  "commit": "d3a0abd5ef9d75d5a57a8c66bfa989838352e126",
+  "pagesStatus": "built",
+  "buildUpdated": "2026-11-18T10:35:10Z",
+  "workflow": "https://github.com/invitewonderland/armaan-meher-noor-mahal/actions/runs/44286732593",
+  "workflowConclusion": "success",
+  "publicRuntimeFilesVerified": 44,
+  "publicBrowserTitle": "Armaan & Meher \u00b7 Beyond Infinity",
+  "publicBrowserRenderer": "webgl2",
+  "publicConsoleErrors": 0,
+  "publicConsoleWarnings": 0,
+  "publicBrowserChecks": [
+    "royal seal and physical opening",
+    "full lossless couple photograph 1199x1312",
+    "correct live ceremony date and time",
+    "custom dhol playback and exit cleanup",
+    "blessing room",
+    "generated portrait keepsake dialog",
+    "final flight",
+    "canonical link copied with visible feedback",
+    "replay to opening"
+  ],
+  "temporaryViewportOverride": "reset",
+  "publicTab": "retained as deliverable",
+  "galleryRailBeforeEntry": {
+    "eagerThumbnails": 8,
+    "decodedThumbnails": 8,
+    "sourceThumbnailWidth": 240
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "assets/beyond/portraits/anand.webp",
+    "unchangedFromPriorRelease": true,
+    "sha256": "0d4ade952bab964ed8eaf8778e2e35267095c4099cb8f876327d62bfca331ec8"
+  },
+  {
+    "file": "assets/beyond/portraits/armaan.webp",
+    "unchangedFromPriorRelease": true,
+    "sha256": "44efc7f5e37f36080fd16da29c7f33b4b4467f7b3af7ee62db33066e01d6f33b"
+  },
+  {
+    "file": "assets/beyond/portraits/meher.webp",
+    "unchangedFromPriorRelease": true,
+    "sha256": "25af80d540264f498fed1dc623cbcb6ff6302e276d7d00a4641f3ba0178ea670"
+  },
+  {
+    "file": "assets/beyond/portraits/mehndi.webp",
+    "unchangedFromPriorRelease": true,
+    "sha256": "4610ba6ec5734053623514b92136cc0b51ed16c96c9b10b350f89a93cc61b13d"
+  },
+  {
+    "file": "assets/beyond/portraits/palace.webp",
+    "unchangedFromPriorRelease": true,
+    "sha256": "3df2787a1fa709904b468314f6d8e9dbbb0b9ee9e60e5c6dd56ac9dc09118866"
+  },
+  {
+    "file": "assets/beyond/portraits/punjab.webp",
+    "unchangedFromPriorRelease": true,
+    "sha256": "9fafd7111a30bc07ae21ef7a8248467be84e2eb5b82d0d681ebd65d305c466c8"
+  },
+  {
+    "file": "assets/beyond/portraits/sangeet.webp",
+    "unchangedFromPriorRelease": true,
+    "sha256": "52bc70f583cc1cd99668e48bdbe3ae676fcd2f45597e3634700903bdee242721"
+  },
+  {
+    "file": "assets/beyond/portraits/together.webp",
+    "unchangedFromPriorRelease": true,
+    "sha256": "8929c1c2ecf206c6e29fe0955034ed32e3224d04e0bbcdf552e8f0be6f1d8b20"
+  }
+]

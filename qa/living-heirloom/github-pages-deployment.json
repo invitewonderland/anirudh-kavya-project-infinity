@@ -1,0 +1,28 @@
+{
+  "commit": "30ebf69d0a13502a0a2b71196e8123f63f2cc4fd",
+  "branch": "codex/noor-mahal",
+  "url": "https://invitewonderland.github.io/armaan-meher-noor-mahal/?edition=living-heirloom",
+  "pagesStatus": "built",
+  "buildUpdated": "2026-11-18T14:15:40Z",
+  "publicAssets": 61,
+  "allAssetsMatched": true,
+  "tests": 8,
+  "publicBrowserRenderer": "webgl2",
+  "publicBrowserErrors": 0,
+  "publicBrowserWarnings": 0,
+  "publicBrowserChecks": [
+    "opening and sealed/opening/journey state",
+    "complete progressive portrait and direct viewer",
+    "ceremony date and event dialog",
+    "custom dhol playback",
+    "stop rhythm on room exit",
+    "readable night-scene room map",
+    "embroidery room",
+    "portrait keepsake dialog",
+    "lotus flight",
+    "canonical-link copy",
+    "replay"
+  ],
+  "rootRuntimeMatchesPublication": true,
+  "viewportOverride": "reset"
+}

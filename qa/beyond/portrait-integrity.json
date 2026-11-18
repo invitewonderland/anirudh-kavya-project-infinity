@@ -1,0 +1,90 @@
+[
+  {
+    "portrait": "palace",
+    "source": "Punjabi Palace Wedding Portrait (1).png",
+    "dimensions": [
+      1199,
+      1312
+    ],
+    "decodedRgbIdentical": true,
+    "webpBytes": 2398848,
+    "sha256": "3df2787a1fa709904b468314f6d8e9dbbb0b9ee9e60e5c6dd56ac9dc09118866"
+  },
+  {
+    "portrait": "together",
+    "source": "Punjabi Palace Wedding Portrait.png",
+    "dimensions": [
+      1199,
+      1312
+    ],
+    "decodedRgbIdentical": true,
+    "webpBytes": 2346334,
+    "sha256": "8929c1c2ecf206c6e29fe0955034ed32e3224d04e0bbcdf552e8f0be6f1d8b20"
+  },
+  {
+    "portrait": "meher",
+    "source": "Radiant Punjabi Bride in Red Bridal Elegance.png",
+    "dimensions": [
+      1199,
+      1312
+    ],
+    "decodedRgbIdentical": true,
+    "webpBytes": 2355476,
+    "sha256": "25af80d540264f498fed1dc623cbcb6ff6302e276d7d00a4641f3ba0178ea670"
+  },
+  {
+    "portrait": "armaan",
+    "source": "Regal Punjabi Wedding Portrait.png",
+    "dimensions": [
+      1199,
+      1312
+    ],
+    "decodedRgbIdentical": true,
+    "webpBytes": 2166566,
+    "sha256": "44efc7f5e37f36080fd16da29c7f33b4b4467f7b3af7ee62db33066e01d6f33b"
+  },
+  {
+    "portrait": "punjab",
+    "source": "Romantic Punjabi Mustard Field Portrait.png",
+    "dimensions": [
+      1199,
+      1312
+    ],
+    "decodedRgbIdentical": true,
+    "webpBytes": 2223376,
+    "sha256": "9fafd7111a30bc07ae21ef7a8248467be84e2eb5b82d0d681ebd65d305c466c8"
+  },
+  {
+    "portrait": "mehndi",
+    "source": "Mehndi Celebration with Sikh Couple.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "decodedRgbIdentical": true,
+    "webpBytes": 2337248,
+    "sha256": "4610ba6ec5734053623514b92136cc0b51ed16c96c9b10b350f89a93cc61b13d"
+  },
+  {
+    "portrait": "sangeet",
+    "source": "Glamorous Punjabi Wedding Dance.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "decodedRgbIdentical": true,
+    "webpBytes": 2207990,
+    "sha256": "52bc70f583cc1cd99668e48bdbe3ae676fcd2f45597e3634700903bdee242721"
+  },
+  {
+    "portrait": "anand",
+    "source": "Devotional Sikh Wedding Under Golden Canopy.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "decodedRgbIdentical": true,
+    "webpBytes": 2330816,
+    "sha256": "0d4ade952bab964ed8eaf8778e2e35267095c4099cb8f876327d62bfca331ec8"
+  }
+]

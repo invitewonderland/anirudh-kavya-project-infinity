@@ -1,0 +1,122 @@
+[
+  {
+    "captionClear": true,
+    "complete": true,
+    "contain": "contain",
+    "file": "together",
+    "quality": "2",
+    "ratio": 0.9138805787954758,
+    "sourceRatio": 0.9138719512195121,
+    "title": "And then, there was you.",
+    "sourceDimensions": [
+      1199,
+      1312
+    ],
+    "ratioWithinOnePixel": true
+  },
+  {
+    "captionClear": true,
+    "complete": true,
+    "contain": "contain",
+    "file": "palace",
+    "quality": "2",
+    "ratio": 0.9138804955434776,
+    "sourceRatio": 0.9138719512195121,
+    "title": "A little closer to forever.",
+    "sourceDimensions": [
+      1199,
+      1312
+    ],
+    "ratioWithinOnePixel": true
+  },
+  {
+    "captionClear": true,
+    "complete": true,
+    "contain": "contain",
+    "file": "punjab",
+    "quality": "2",
+    "ratio": 0.9138806620474892,
+    "sourceRatio": 0.9138719512195121,
+    "title": "From Punjab, with love.",
+    "sourceDimensions": [
+      1199,
+      1312
+    ],
+    "ratioWithinOnePixel": true
+  },
+  {
+    "captionClear": true,
+    "complete": true,
+    "contain": "contain",
+    "file": "meher",
+    "quality": "2",
+    "ratio": 0.9138806620474892,
+    "sourceRatio": 0.9138719512195121,
+    "title": "Meher. All the light.",
+    "sourceDimensions": [
+      1199,
+      1312
+    ],
+    "ratioWithinOnePixel": true
+  },
+  {
+    "captionClear": true,
+    "complete": true,
+    "contain": "contain",
+    "file": "armaan",
+    "quality": "2",
+    "ratio": 0.9138804955434776,
+    "sourceRatio": 0.9138719512195121,
+    "title": "Armaan. All the heart.",
+    "sourceDimensions": [
+      1199,
+      1312
+    ],
+    "ratioWithinOnePixel": true
+  },
+  {
+    "captionClear": true,
+    "complete": true,
+    "contain": "contain",
+    "file": "mehndi",
+    "quality": "2",
+    "ratio": 1,
+    "sourceRatio": 1.0,
+    "title": "A little colour. A lot of love.",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "ratioWithinOnePixel": true
+  },
+  {
+    "captionClear": true,
+    "complete": true,
+    "contain": "contain",
+    "file": "sangeet",
+    "quality": "2",
+    "ratio": 1,
+    "sourceRatio": 1.0,
+    "title": "The kind of joy you dance to.",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "ratioWithinOnePixel": true
+  },
+  {
+    "captionClear": true,
+    "complete": true,
+    "contain": "contain",
+    "file": "anand",
+    "quality": "2",
+    "ratio": 1,
+    "sourceRatio": 1.0,
+    "title": "A sacred beginning. A lifetime of love.",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "ratioWithinOnePixel": true
+  }
+]

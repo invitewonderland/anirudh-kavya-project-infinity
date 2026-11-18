@@ -1,0 +1,83 @@
+[
+  {
+    "id": "short",
+    "canvas": [
+      306,
+      347
+    ],
+    "font": 35.52210070800781,
+    "frame": {
+      "bottom": 623.1000061035156,
+      "height": 386.375,
+      "left": 30.287500381469727,
+      "right": 360.112512588501,
+      "top": 236.7250061035156,
+      "width": 329.82501220703125,
+      "x": 30.287500381469727,
+      "y": 236.7250061035156
+    },
+    "horizontalOverflow": false,
+    "lines": 2,
+    "minHeight": "244px",
+    "room": [
+      709,
+      709
+    ],
+    "text": "daaaaaaaaaaaa",
+    "wordsInCloth": true
+  },
+  {
+    "id": "long",
+    "canvas": [
+      296,
+      415
+    ],
+    "font": 22.81028890991211,
+    "frame": {
+      "bottom": 691.7250061035156,
+      "height": 455,
+      "left": 30.075000762939453,
+      "right": 349.9124946594238,
+      "top": 236.7250061035156,
+      "width": 319.8374938964844,
+      "x": 30.075000762939453,
+      "y": 236.7250061035156
+    },
+    "horizontalOverflow": false,
+    "lines": 10,
+    "minHeight": "455px",
+    "room": [
+      709,
+      778
+    ],
+    "text": "May your home be filled with laughter, your days with kindness, and every tomorrow with a love that grows deeper. May you always find joy in one another and warmth in every shared",
+    "wordsInCloth": true
+  },
+  {
+    "id": "punjabi",
+    "canvas": [
+      306,
+      347
+    ],
+    "font": 28.478925567626952,
+    "frame": {
+      "bottom": 623.1000061035156,
+      "height": 386.375,
+      "left": 30.287500381469727,
+      "right": 360.112512588501,
+      "top": 236.7250061035156,
+      "width": 329.82501220703125,
+      "x": 30.287500381469727,
+      "y": 236.7250061035156
+    },
+    "horizontalOverflow": false,
+    "lines": 4,
+    "minHeight": "325px",
+    "room": [
+      709,
+      709
+    ],
+    "text": "ਰੱਬ ਤੁਹਾਡੀ ਜੋੜੀ ਸਦਾ ਸਲਾਮਤ ਰੱਖੇ। ਤੁਹਾਡੀ ਜ਼ਿੰਦਗੀ ਪਿਆਰ ਅਤੇ ਖੁਸ਼ੀਆਂ ਨਾਲ ਭਰੀ ਰਹੇ।",
+    "wordsInCloth": true
+  }
+]
